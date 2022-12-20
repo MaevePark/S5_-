@@ -1,0 +1,131 @@
+package kh.s5.nvot.member.model;
+
+import java.sql.Date;  // 중요 
+
+public class MemberVo {
+//	MEMBER_ID           NOT NULL VARCHAR2(30)  
+//	MEMBER_PWD          NOT NULL VARCHAR2(30)  
+//	MEMBER_NAME         NOT NULL VARCHAR2(100) 
+//	MEMBER_EMAIL                 VARCHAR2(80)  
+//	MEMBER_CELLPHONE    NOT NULL VARCHAR2(12)  
+//	MEMBER_TEL                   VARCHAR2(12)  
+//	MEMBER_ADDRESS_POST NOT NULL VARCHAR2(80)  
+//	MEMBER_ADDRESS_1    NOT NULL VARCHAR2(50)  
+//	MEMBER_ADDRESS_2    NOT NULL VARCHAR2(50)  
+//	MEMBER_BIRTHDAY     NOT NULL DATE          
+//	MEMBER_EMAIL_AGREE           NUMBER        
+//	MEMBER_SMS_AGREE             NUMBER  
+	
+	private String MEMBER_ID;
+	private String MEMBER_PWD;
+	private String MEMBER_NAME;
+	private String MEMBER_EMAIL;
+	private String MEMBER_CELLPHONE;
+	private String MEMBER_TEL;
+	private String MEMBER_ADDRESS_POST;
+	private String MEMBER_ADDRESS_1;
+	private String MEMBER_ADDRESS_2;
+	private Date MEMBER_BIRTHDAY;
+	private int MEMBER_EMAIL_AGREE;
+	private int MEMBER_SMS_AGREE;
+
+	
+	public MemberVo(String mEMBER_ID, String mEMBER_PWD, String mEMBER_NAME, String mEMBER_EMAIL,
+			String mEMBER_CELLPHONE, String mEMBER_TEL, String mEMBER_ADDRESS_POST, String mEMBER_ADDRESS_1,
+			String mEMBER_ADDRESS_2, Date mEMBER_BIRTHDAY, int mEMBER_EMAIL_AGREE, int mEMBER_SMS_AGREE) {
+		super();
+		MEMBER_ID = mEMBER_ID;
+		MEMBER_PWD = mEMBER_PWD;
+		MEMBER_NAME = mEMBER_NAME;
+		MEMBER_EMAIL = mEMBER_EMAIL;
+		MEMBER_CELLPHONE = mEMBER_CELLPHONE;
+		MEMBER_TEL = mEMBER_TEL;
+		MEMBER_ADDRESS_POST = mEMBER_ADDRESS_POST;
+		MEMBER_ADDRESS_1 = mEMBER_ADDRESS_1;
+		MEMBER_ADDRESS_2 = mEMBER_ADDRESS_2;
+		MEMBER_BIRTHDAY = mEMBER_BIRTHDAY;
+		MEMBER_EMAIL_AGREE = mEMBER_EMAIL_AGREE;
+		MEMBER_SMS_AGREE = mEMBER_SMS_AGREE;
+	}
+	@Override
+	public String toString() {
+		return "MemberVo [MEMBER_ID=" + MEMBER_ID + ", MEMBER_PWD=" + MEMBER_PWD + ", MEMBER_NAME=" + MEMBER_NAME
+				+ ", MEMBER_EMAIL=" + MEMBER_EMAIL + ", MEMBER_CELLPHONE=" + MEMBER_CELLPHONE + ", MEMBER_TEL="
+				+ MEMBER_TEL + ", MEMBER_ADDRESS_POST=" + MEMBER_ADDRESS_POST + ", MEMBER_ADDRESS_1=" + MEMBER_ADDRESS_1
+				+ ", MEMBER_ADDRESS_2=" + MEMBER_ADDRESS_2 + ", MEMBER_BIRTHDAY=" + MEMBER_BIRTHDAY
+				+ ", MEMBER_EMAIL_AGREE=" + MEMBER_EMAIL_AGREE + ", MEMBER_SMS_AGREE=" + MEMBER_SMS_AGREE + "]";
+	}
+
+	public String getMEMBER_ID() {
+		return MEMBER_ID;
+	}
+	public void setMEMBER_ID(String mEMBER_ID) {
+		MEMBER_ID = mEMBER_ID;
+	}
+	public String getMEMBER_PWD() {
+		return MEMBER_PWD;
+	}
+	public void setMEMBER_PWD(String mEMBER_PWD) {
+		MEMBER_PWD = mEMBER_PWD;
+	}
+	public String getMEMBER_NAME() {
+		return MEMBER_NAME;
+	}
+	public void setMEMBER_NAME(String mEMBER_NAME) {
+		MEMBER_NAME = mEMBER_NAME;
+	}
+	public String getMEMBER_EMAIL() {
+		return MEMBER_EMAIL;
+	}
+	public void setMEMBER_EMAIL(String mEMBER_EMAIL) {
+		MEMBER_EMAIL = mEMBER_EMAIL;
+	}
+	public String getMEMBER_CELLPHONE() {
+		return MEMBER_CELLPHONE;
+	}
+	public void setMEMBER_CELLPHONE(String mEMBER_CELLPHONE) {
+		MEMBER_CELLPHONE = mEMBER_CELLPHONE;
+	}
+	public String getMEMBER_TEL() {
+		return MEMBER_TEL;
+	}
+	public void setMEMBER_TEL(String mEMBER_TEL) {
+		MEMBER_TEL = mEMBER_TEL;
+	}
+	public String getMEMBER_ADDRESS_POST() {
+		return MEMBER_ADDRESS_POST;
+	}
+	public void setMEMBER_ADDRESS_POST(String mEMBER_ADDRESS_POST) {
+		MEMBER_ADDRESS_POST = mEMBER_ADDRESS_POST;
+	}
+	public String getMEMBER_ADDRESS_1() {
+		return MEMBER_ADDRESS_1;
+	}
+	public void setMEMBER_ADDRESS_1(String mEMBER_ADDRESS_1) {
+		MEMBER_ADDRESS_1 = mEMBER_ADDRESS_1;
+	}
+	public String getMEMBER_ADDRESS_2() {
+		return MEMBER_ADDRESS_2;
+	}
+	public void setMEMBER_ADDRESS_2(String mEMBER_ADDRESS_2) {
+		MEMBER_ADDRESS_2 = mEMBER_ADDRESS_2;
+	}
+	public Date getMEMBER_BIRTHDAY() {
+		return MEMBER_BIRTHDAY;
+	}
+	public void setMEMBER_BIRTHDAY(Date mEMBER_BIRTHDAY) {
+		MEMBER_BIRTHDAY = mEMBER_BIRTHDAY;
+	}
+	public int getMEMBER_EMAIL_AGREE() {
+		return MEMBER_EMAIL_AGREE;
+	}
+	public void setMEMBER_EMAIL_AGREE(int mEMBER_EMAIL_AGREE) {
+		MEMBER_EMAIL_AGREE = mEMBER_EMAIL_AGREE;
+	}
+	public int getMEMBER_SMS_AGREE() {
+		return MEMBER_SMS_AGREE;
+	}
+	public void setMEMBER_SMS_AGREE(int mEMBER_SMS_AGREE) {
+		MEMBER_SMS_AGREE = mEMBER_SMS_AGREE;
+	}
+}
