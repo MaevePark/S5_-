@@ -15,75 +15,89 @@ public class BoardVo {
 //	BOARD_FILEPATH NOT NULL VARCHAR2(500) 
 //	BOARD_NO       NOT NULL NUMBER       
 
-	private int BOARD_NO;
-	private String BOARD_TITLE;
-	private String BOARD_CONTENT;
-	private String BOARD_WRITER;
-	private Timestamp BOARD_DATE;
-	private int BOARD_CATEGORY_CODE;
+	private int board_no;
+	private String board_title;
+	private String board_content;
+	private String board_writer;
+	private Timestamp board_date;
+	private int board_category_code;
 
 // bfile 테이블에 대한 방법 1
 	private List<BoardFileVo> bfilelist;
 
-	public BoardVo(int bOARD_NO, String bOARD_TITLE, String bOARD_CONTENT, String bOARD_WRITER, Timestamp bOARD_DATE,
-			int bOARD_CATEGORY_CODE, List<BoardFileVo> bfilelist) {
+	public BoardVo(int board_no, String board_title, String board_content, String board_writer, Timestamp board_date,
+			int board_category_code, List<BoardFileVo> bfilelist) {
 		super();
-		BOARD_NO = bOARD_NO;
-		BOARD_TITLE = bOARD_TITLE;
-		BOARD_CONTENT = bOARD_CONTENT;
-		BOARD_WRITER = bOARD_WRITER;
-		BOARD_DATE = bOARD_DATE;
-		BOARD_CATEGORY_CODE = bOARD_CATEGORY_CODE;
+		this.board_no = board_no;
+		this.board_title = board_title;
+		this.board_content = board_content;
+		this.board_writer = board_writer;
+		this.board_date = board_date;
+		this.board_category_code = board_category_code;
 		this.bfilelist = bfilelist;
 	}
 
 	@Override
 	public String toString() {
-		return "BoardVo [BOARD_NO=" + BOARD_NO + ", BOARD_TITLE=" + BOARD_TITLE + ", BOARD_CONTENT=" + BOARD_CONTENT
-				+ ", BOARD_WRITER=" + BOARD_WRITER + ", BOARD_DATE=" + BOARD_DATE + ", BOARD_CATEGORY_CODE="
-				+ BOARD_CATEGORY_CODE + ", bfilelist=" + bfilelist + "]";
+		return "BoardVo [board_no=" + board_no + ", board_title=" + board_title + ", board_content=" + board_content
+				+ ", board_writer=" + board_writer + ", board_date=" + board_date + ", board_category_code="
+				+ board_category_code + ", bfilelist=" + bfilelist + "]";
 	}
 
-	public int getBOARD_NO() {
-		return BOARD_NO;
+	public int getBoard_no() {
+		return board_no;
 	}
-	public void setBOARD_NO(int bOARD_NO) {
-		BOARD_NO = bOARD_NO;
+
+	public void setBoard_no(int board_no) {
+		this.board_no = board_no;
 	}
-	public String getBOARD_TITLE() {
-		return BOARD_TITLE;
+
+	public String getBoard_title() {
+		return board_title;
 	}
-	public void setBOARD_TITLE(String bOARD_TITLE) {
-		BOARD_TITLE = bOARD_TITLE;
+
+	public void setBoard_title(String board_title) {
+		this.board_title = board_title;
 	}
-	public String getBOARD_CONTENT() {
-		return BOARD_CONTENT;
+
+	public String getBoard_content() {
+		return board_content;
 	}
-	public void setBOARD_CONTENT(String bOARD_CONTENT) {
-		BOARD_CONTENT = bOARD_CONTENT;
+
+	public void setBoard_content(String board_content) {
+		this.board_content = board_content;
 	}
-	public String getBOARD_WRITER() {
-		return BOARD_WRITER;
+
+	public String getBoard_writer() {
+		return board_writer;
 	}
-	public void setBOARD_WRITER(String bOARD_WRITER) {
-		BOARD_WRITER = bOARD_WRITER;
+
+	public void setBoard_writer(String board_writer) {
+		this.board_writer = board_writer;
 	}
-	public Timestamp getBOARD_DATE() {
-		return BOARD_DATE;
+
+	public Timestamp getBoard_date() {
+		return board_date;
 	}
-	public void setBOARD_DATE(Timestamp bOARD_DATE) {
-		BOARD_DATE = bOARD_DATE;
+
+	public void setBoard_date(Timestamp board_date) {
+		this.board_date = board_date;
 	}
-	public int getBOARD_CATEGORY_CODE() {
-		return BOARD_CATEGORY_CODE;
+
+	public int getBoard_category_code() {
+		return board_category_code;
 	}
-	public void setBOARD_CATEGORY_CODE(int bOARD_CATEGORY_CODE) {
-		BOARD_CATEGORY_CODE = bOARD_CATEGORY_CODE;
+
+	public void setBoard_category_code(int board_category_code) {
+		this.board_category_code = board_category_code;
 	}
+
 	public List<BoardFileVo> getBfilelist() {
 		return bfilelist;
 	}
+
 	public void setBfilelist(List<BoardFileVo> bfilelist) {
 		this.bfilelist = bfilelist;
 	}
+
 }
