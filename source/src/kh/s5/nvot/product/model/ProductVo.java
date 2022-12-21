@@ -6,44 +6,44 @@ public class ProductVo {
 //	PRODUCT_PRICE  NOT NULL NUMBER        
 //	PRODUCT_DETAIL NOT NULL CLOB    
 	
-	private int PRODUCT_ID;
-	private String PRODUCT_NAME;
-	private int PRODUCT_PRICE;
-	private String PRODUCT_DETAIL;
-	public ProductVo(int pRODUCT_ID, String pRODUCT_NAME, int pRODUCT_PRICE, String pRODUCT_DETAIL) {
+	private int product_id;
+	private String product_name;
+	private int product_price;
+	private String product_detail;
+	public ProductVo(int product_id, String product_name, int product_price, String product_detail) {
 		super();
-		PRODUCT_ID = pRODUCT_ID;
-		PRODUCT_NAME = pRODUCT_NAME;
-		PRODUCT_PRICE = pRODUCT_PRICE;
-		PRODUCT_DETAIL = pRODUCT_DETAIL;
+		this.product_id = product_id;
+		this.product_name = product_name;
+		this.product_price = product_price;
+		this.product_detail = product_detail;
 	}
 	@Override
 	public String toString() {
-		return "ProductVo [PRODUCT_ID=" + PRODUCT_ID + ", PRODUCT_NAME=" + PRODUCT_NAME + ", PRODUCT_PRICE="
-				+ PRODUCT_PRICE + ", PRODUCT_DETAIL=" + PRODUCT_DETAIL + "]";
+		return "ProductVo [product_id=" + product_id + ", product_name=" + product_name + ", product_price="
+				+ product_price + ", product_detail=" + product_detail + "]";
 	}
-	public int getPRODUCT_ID() {
-		return PRODUCT_ID;
+	public int getProduct_id() {
+		return product_id;
 	}
-	public void setPRODUCT_ID(int pRODUCT_ID) {
-		PRODUCT_ID = pRODUCT_ID;
+	public void setProduct_id(int product_id) {
+		this.product_id = product_id;
 	}
-	public String getPRODUCT_NAME() {
-		return PRODUCT_NAME;
+	public String getProduct_name() {
+		return product_name;
 	}
-	public void setPRODUCT_NAME(String pRODUCT_NAME) {
-		PRODUCT_NAME = pRODUCT_NAME;
+	public void setProduct_name(String product_name) {
+		this.product_name = product_name;
 	}
-	public int getPRODUCT_PRICE() {
-		return PRODUCT_PRICE;
+	public int getProduct_price() {
+		return product_price;
 	}
-	public void setPRODUCT_PRICE(int pRODUCT_PRICE) {
-		PRODUCT_PRICE = pRODUCT_PRICE;
+	public void setProduct_price(int product_price) {
+		this.product_price = product_price;
 	}
-	public String getPRODUCT_DETAIL() {
-		return PRODUCT_DETAIL;
+	public String getProduct_detail() {
+		return product_detail;
 	}
-	public void setPRODUCT_DETAIL(String pRODUCT_DETAIL) {
-		PRODUCT_DETAIL = pRODUCT_DETAIL;
-	}	
+	public void setProduct_detail(String product_detail) {
+		this.product_detail = product_detail;
+	}
 }
