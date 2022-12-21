@@ -16,116 +16,140 @@ public class MemberVo {
 //	MEMBER_EMAIL_AGREE           NUMBER        
 //	MEMBER_SMS_AGREE             NUMBER  
 	
-	private String MEMBER_ID;
-	private String MEMBER_PWD;
-	private String MEMBER_NAME;
-	private String MEMBER_EMAIL;
-	private String MEMBER_CELLPHONE;
-	private String MEMBER_TEL;
-	private String MEMBER_ADDRESS_POST;
-	private String MEMBER_ADDRESS_1;
-	private String MEMBER_ADDRESS_2;
-	private Date MEMBER_BIRTHDAY;
-	private int MEMBER_EMAIL_AGREE;
-	private int MEMBER_SMS_AGREE;
-
+	private String member_id;
+	private String member_pwd;
+	private String member_name;
+	private String member_email;
+	private String member_cellphone;
+	private String member_tel;
+	private String member_address_post;
+	private String member_address_1;
+	private String member_address_2;
+	private Date member_birthday;
+	private int member_email_agree;
+	private int member_sms_agree;
 	
-	public MemberVo(String mEMBER_ID, String mEMBER_PWD, String mEMBER_NAME, String mEMBER_EMAIL,
-			String mEMBER_CELLPHONE, String mEMBER_TEL, String mEMBER_ADDRESS_POST, String mEMBER_ADDRESS_1,
-			String mEMBER_ADDRESS_2, Date mEMBER_BIRTHDAY, int mEMBER_EMAIL_AGREE, int mEMBER_SMS_AGREE) {
+	public MemberVo(String member_id, String member_pwd, String member_name, String member_email,
+			String member_cellphone, String member_tel, String member_address_post, String member_address_1,
+			String member_address_2, Date member_birthday, int member_email_agree, int member_sms_agree) {
 		super();
-		MEMBER_ID = mEMBER_ID;
-		MEMBER_PWD = mEMBER_PWD;
-		MEMBER_NAME = mEMBER_NAME;
-		MEMBER_EMAIL = mEMBER_EMAIL;
-		MEMBER_CELLPHONE = mEMBER_CELLPHONE;
-		MEMBER_TEL = mEMBER_TEL;
-		MEMBER_ADDRESS_POST = mEMBER_ADDRESS_POST;
-		MEMBER_ADDRESS_1 = mEMBER_ADDRESS_1;
-		MEMBER_ADDRESS_2 = mEMBER_ADDRESS_2;
-		MEMBER_BIRTHDAY = mEMBER_BIRTHDAY;
-		MEMBER_EMAIL_AGREE = mEMBER_EMAIL_AGREE;
-		MEMBER_SMS_AGREE = mEMBER_SMS_AGREE;
+		this.member_id = member_id;
+		this.member_pwd = member_pwd;
+		this.member_name = member_name;
+		this.member_email = member_email;
+		this.member_cellphone = member_cellphone;
+		this.member_tel = member_tel;
+		this.member_address_post = member_address_post;
+		this.member_address_1 = member_address_1;
+		this.member_address_2 = member_address_2;
+		this.member_birthday = member_birthday;
+		this.member_email_agree = member_email_agree;
+		this.member_sms_agree = member_sms_agree;
 	}
+
 	@Override
 	public String toString() {
-		return "MemberVo [MEMBER_ID=" + MEMBER_ID + ", MEMBER_PWD=" + MEMBER_PWD + ", MEMBER_NAME=" + MEMBER_NAME
-				+ ", MEMBER_EMAIL=" + MEMBER_EMAIL + ", MEMBER_CELLPHONE=" + MEMBER_CELLPHONE + ", MEMBER_TEL="
-				+ MEMBER_TEL + ", MEMBER_ADDRESS_POST=" + MEMBER_ADDRESS_POST + ", MEMBER_ADDRESS_1=" + MEMBER_ADDRESS_1
-				+ ", MEMBER_ADDRESS_2=" + MEMBER_ADDRESS_2 + ", MEMBER_BIRTHDAY=" + MEMBER_BIRTHDAY
-				+ ", MEMBER_EMAIL_AGREE=" + MEMBER_EMAIL_AGREE + ", MEMBER_SMS_AGREE=" + MEMBER_SMS_AGREE + "]";
+		return "MemberVo [member_id=" + member_id + ", member_pwd=" + member_pwd + ", member_name=" + member_name
+				+ ", member_email=" + member_email + ", member_cellphone=" + member_cellphone + ", member_tel="
+				+ member_tel + ", member_address_post=" + member_address_post + ", member_address_1=" + member_address_1
+				+ ", member_address_2=" + member_address_2 + ", member_birthday=" + member_birthday
+				+ ", member_email_agree=" + member_email_agree + ", member_sms_agree=" + member_sms_agree + "]";
 	}
 
-	public String getMEMBER_ID() {
-		return MEMBER_ID;
+	public String getMember_id() {
+		return member_id;
 	}
-	public void setMEMBER_ID(String mEMBER_ID) {
-		MEMBER_ID = mEMBER_ID;
+
+	public void setMember_id(String member_id) {
+		this.member_id = member_id;
 	}
-	public String getMEMBER_PWD() {
-		return MEMBER_PWD;
+
+	public String getMember_pwd() {
+		return member_pwd;
 	}
-	public void setMEMBER_PWD(String mEMBER_PWD) {
-		MEMBER_PWD = mEMBER_PWD;
+
+	public void setMember_pwd(String member_pwd) {
+		this.member_pwd = member_pwd;
 	}
-	public String getMEMBER_NAME() {
-		return MEMBER_NAME;
+
+	public String getMember_name() {
+		return member_name;
 	}
-	public void setMEMBER_NAME(String mEMBER_NAME) {
-		MEMBER_NAME = mEMBER_NAME;
+
+	public void setMember_name(String member_name) {
+		this.member_name = member_name;
 	}
-	public String getMEMBER_EMAIL() {
-		return MEMBER_EMAIL;
+
+	public String getMember_email() {
+		return member_email;
 	}
-	public void setMEMBER_EMAIL(String mEMBER_EMAIL) {
-		MEMBER_EMAIL = mEMBER_EMAIL;
+
+	public void setMember_email(String member_email) {
+		this.member_email = member_email;
 	}
-	public String getMEMBER_CELLPHONE() {
-		return MEMBER_CELLPHONE;
+
+	public String getMember_cellphone() {
+		return member_cellphone;
 	}
-	public void setMEMBER_CELLPHONE(String mEMBER_CELLPHONE) {
-		MEMBER_CELLPHONE = mEMBER_CELLPHONE;
+
+	public void setMember_cellphone(String member_cellphone) {
+		this.member_cellphone = member_cellphone;
 	}
-	public String getMEMBER_TEL() {
-		return MEMBER_TEL;
+
+	public String getMember_tel() {
+		return member_tel;
 	}
-	public void setMEMBER_TEL(String mEMBER_TEL) {
-		MEMBER_TEL = mEMBER_TEL;
+
+	public void setMember_tel(String member_tel) {
+		this.member_tel = member_tel;
 	}
-	public String getMEMBER_ADDRESS_POST() {
-		return MEMBER_ADDRESS_POST;
+
+	public String getMember_address_post() {
+		return member_address_post;
 	}
-	public void setMEMBER_ADDRESS_POST(String mEMBER_ADDRESS_POST) {
-		MEMBER_ADDRESS_POST = mEMBER_ADDRESS_POST;
+
+	public void setMember_address_post(String member_address_post) {
+		this.member_address_post = member_address_post;
 	}
-	public String getMEMBER_ADDRESS_1() {
-		return MEMBER_ADDRESS_1;
+
+	public String getMember_address_1() {
+		return member_address_1;
 	}
-	public void setMEMBER_ADDRESS_1(String mEMBER_ADDRESS_1) {
-		MEMBER_ADDRESS_1 = mEMBER_ADDRESS_1;
+
+	public void setMember_address_1(String member_address_1) {
+		this.member_address_1 = member_address_1;
 	}
-	public String getMEMBER_ADDRESS_2() {
-		return MEMBER_ADDRESS_2;
+
+	public String getMember_address_2() {
+		return member_address_2;
 	}
-	public void setMEMBER_ADDRESS_2(String mEMBER_ADDRESS_2) {
-		MEMBER_ADDRESS_2 = mEMBER_ADDRESS_2;
+
+	public void setMember_address_2(String member_address_2) {
+		this.member_address_2 = member_address_2;
 	}
-	public Date getMEMBER_BIRTHDAY() {
-		return MEMBER_BIRTHDAY;
+
+	public Date getMember_birthday() {
+		return member_birthday;
 	}
-	public void setMEMBER_BIRTHDAY(Date mEMBER_BIRTHDAY) {
-		MEMBER_BIRTHDAY = mEMBER_BIRTHDAY;
+
+	public void setMember_birthday(Date member_birthday) {
+		this.member_birthday = member_birthday;
 	}
-	public int getMEMBER_EMAIL_AGREE() {
-		return MEMBER_EMAIL_AGREE;
+
+	public int getMember_email_agree() {
+		return member_email_agree;
 	}
-	public void setMEMBER_EMAIL_AGREE(int mEMBER_EMAIL_AGREE) {
-		MEMBER_EMAIL_AGREE = mEMBER_EMAIL_AGREE;
+
+	public void setMember_email_agree(int member_email_agree) {
+		this.member_email_agree = member_email_agree;
 	}
-	public int getMEMBER_SMS_AGREE() {
-		return MEMBER_SMS_AGREE;
+
+	public int getMember_sms_agree() {
+		return member_sms_agree;
 	}
-	public void setMEMBER_SMS_AGREE(int mEMBER_SMS_AGREE) {
-		MEMBER_SMS_AGREE = mEMBER_SMS_AGREE;
+
+	public void setMember_sms_agree(int member_sms_agree) {
+		this.member_sms_agree = member_sms_agree;
 	}
+	
 }
