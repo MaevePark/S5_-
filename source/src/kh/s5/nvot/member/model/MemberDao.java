@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import common.jdbc.JdbcTemplate;
@@ -23,23 +24,24 @@ public class MemberDao {
 		System.out.println(">>>> MemberDao insert param : " + vo);
 		int result = 0;
 		
-		String sql = "insert into member (MEMBER_ID, MEMBER_PWD, MEMBER_NAME, MEMBER_EMAIL, MEMBER_CELLPHONE, MEMBER_TEL, MEMBER_ADDRESS_POST, "
-				+ "MEMBER_ADDRESS_1, MEMBER_ADDRESS_2, MEMBER_BIRTHDAY, MEMBER_EMAIL_AGREE,MEMBER_SMS_AGREE)";
+		String sql = "insert into member (member_id, member_pwd, member_name, member_email, member_cellphone, member_tel, member_address_post, "
+				+ "member_address_1, member_address_2, member_birthday, member_email_agree,member_sms_agree)";
 		PreparedStatement pstmt = null;
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, vo.getMEMBER_ID());
-			pstmt.setString(2, vo.getMEMBER_PWD());
-			pstmt.setString(3, vo.getMEMBER_NAME());
-			pstmt.setString(4, vo.getMEMBER_EMAIL());
-			pstmt.setString(5, vo.getMEMBER_CELLPHONE());
-			pstmt.setString(6, vo.getMEMBER_TEL());
-			pstmt.setString(7, vo.getMEMBER_ADDRESS_1());
-			pstmt.setString(8, vo.getMEMBER_ADDRESS_2());
-			pstmt.setDate(9, vo.getMEMBER_BIRTHDAY());
-			pstmt.setInt(10, vo.getMEMBER_EMAIL_AGREE());
-			pstmt.setInt(11, vo.getMEMBER_SMS_AGREE());
+			pstmt.setString(1, vo.getMember_id());
+			pstmt.setString(2, vo.getMember_pwd());
+			pstmt.setString(3, vo.getMember_name());
+			pstmt.setString(4, vo.getMember_email());
+			pstmt.setString(5, vo.getMember_cellphone());
+			pstmt.setString(6, vo.getMember_tel());
+			pstmt.setString(7, vo.getMember_address_post());
+			pstmt.setString(8, vo.getMember_address_1());
+			pstmt.setString(8, vo.getMember_address_2());
+			pstmt.setDate(9, vo.getMember_birthday());
+			pstmt.setInt(10, vo.getMember_email_agree());
+			pstmt.setInt(11, vo.getMember_sms_agree());
 			
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
@@ -52,17 +54,17 @@ public class MemberDao {
 	}
 	
 //	update - 수정
-	public int update(Connection conn, MemberVo vo, String MEMBER_ID/*주로 PK*/) {
+	public int update(Connection conn, MemberVo vo, String member_id/*주로 PK*/) {
 		System.out.println(">>>> MemberDao update param vo : " + vo);
-		System.out.println(">>>> MemberDao update param mid : " + MEMBER_ID);
+		System.out.println(">>>> MemberDao update param member_id : " + member_id);
 		int result = 0;
 		
 		String sql = "update member set MEMBER_PWD=? where MEMBER_ID=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, vo.getMEMBER_PWD());
-			pstmt.setString(2, vo.getMEMBER_ID());
+			pstmt.setString(1, vo.getMember_pwd());
+			pstmt.setString(2, vo.getMember_id());
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -74,15 +76,15 @@ public class MemberDao {
 	}
 	
 //	delete  - 삭제
-	public int delete(Connection conn, String MEMBER_ID/*주로 PK*/) {
-		System.out.println(">>>> MemberDao delete param mid : " + MEMBER_ID);
+	public int delete(Connection conn, String member_id/*주로 PK*/) {
+		System.out.println(">>>> MemberDao delete param member_id : " + member_id);
 		int result = 0;
 		
-		String sql = "delete from member where mid=?";
+		String sql = "delete from member where member_id=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, MEMBER_ID);
+			pstmt.setString(1, member_id);
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -95,7 +97,7 @@ public class MemberDao {
 	
 //	selectList  - 목록조회
 	public List<MemberVo> selectList(Connection conn){
-List<MemberVo> volist = null;
+		List<MemberVo> volist = null;
 		
 		String sql = "select * from member";
 		PreparedStatement pstmt = null;
@@ -107,18 +109,18 @@ List<MemberVo> volist = null;
 				volist = new ArrayList<MemberVo>();
 				do {
 					MemberVo vo = new MemberVo();
-					vo.setMid(rs.getString("mid"));
-					vo.setMpw(rs.getString("mpw"));
-					vo.setMname(rs.getString("mname"));
-					vo.setMemail(rs.getString("memail"));
-					vo.setMaddr1(rs.getString("maddr1"));
-					vo.setMaddr2(rs.getString("maddr2"));
-					vo.setMgender(rs.getInt("mpwd"));
-					vo.setMbyear(rs.getInt("mbyear"));
-					vo.setMbmonth(rs.getInt("mbmonth"));
-					vo.setMbdate(rs.getInt("mbdate"));
-					vo.setMconsent(rs.getInt("mconsent"));
-					vo.setMentrance(rs.getTimestamp("mentrance"));
+					vo.setMember_id(rs.getString("member_id"));
+					vo.setMember_pwd(rs.getString("member_pwd"));
+					vo.setMember_name(rs.getString("member_name"));
+					vo.setMember_email(rs.getString("member_email"));
+					vo.setMember_cellphone(rs.getString("member_cellphone"));
+					vo.setMember_tel(rs.getString("member_tel"));
+					vo.setMember_address_post(rs.getString("member_address_post"));
+					vo.setMember_address_1(rs.getString("member_address_1"));
+					vo.setMember_address_2(rs.getString("member_address_2"));
+					vo.setMember_birthday(rs.getDate("member_birthday"));
+					vo.setMember_email_agree(rs.getInt("mconsent"));
+					vo.setMember_sms_agree(rs.getInt("mconsent"));
 					
 					volist.add(vo);
 				} while(rs.next());
@@ -132,37 +134,63 @@ List<MemberVo> volist = null;
 		System.out.println(">>>> MemberDao selectList return : " + volist);
 		return volist;
 	}
+	
 //	selectOne - 상세조회
-	public MemberVo selectOne(Connection conn, String MEMBER_ID/*주로 PK*/){
+	public MemberVo selectOne(Connection conn, String member_id/*주로 PK*/){
+		System.out.println(">>>> MemberDao selectOne param member_id : " + member_id);
 		MemberVo vo = null;
-		return vo;
-	}
-//	selectOne - login - 상세조회
-	public MemberVo login(Connection conn, String MEMBER_ID, String MEMBER_PWD){
-		MemberVo vo = null;
-		//PK로 where했으므로 단일행 결과물
-		// * 속도 저하의 원인. 필요한 컬럼명을 나열함.
-		String query = "select MEMBER_ID,MEMBER_PWD,mauthcode,busno,mtype from member where mid=? and mpwd=?";
+		
+		String sql = "select * from member where member_id=?";
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1, MEMBER_ID);
-			pstmt.setString(2, MEMBER_PWD);
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member_id);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				vo = new MemberVo();
+				vo.setMember_id(rs.getString("member_id"));
+				vo.setMember_pwd(rs.getString("member_pwd"));
+				vo.setMember_name(rs.getString("member_name"));
+				vo.setMember_email(rs.getString("member_email"));
+				vo.setMember_cellphone(rs.getString("member_cellphone"));
+				vo.setMember_tel(rs.getString("member_tel"));
+				vo.setMember_address_post(rs.getString("member_address_post"));
+				vo.setMember_address_1(rs.getString("member_address_1"));
+				vo.setMember_address_2(rs.getString("member_address_2"));
+				vo.setMember_birthday(rs.getDate("member_birthday"));
+				vo.setMember_email_agree(rs.getInt("mconsent"));
+				vo.setMember_sms_agree(rs.getInt("mconsent"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JdbcTemplate.close(rs);
+			JdbcTemplate.close(pstmt);
+		}
+		System.out.println(">>>> MemberDao selectOne return : " + vo);
+		return vo;
+	}
+	
+//	selectOne - login - 상세조회
+	public MemberVo login(Connection conn, String member_id, String member_pwd){
+		MemberVo vo = null;
+		
+		String sql = "select member_id,member_name from member where member_id=? and member_pwd=?";
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member_id);
+			pstmt.setString(2, member_pwd);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				//PK로 where했으므로 단일행 결과물로 while문 작성하지 않음
 				vo = new MemberVo();
-				vo.setMEMBER_ID(rs.getString("mid"));
-				vo.setMname(rs.getString("mname"));
-				vo.setMauthcode(rs.getString("mauthcode"));
-				vo.setMtype(rs.getInt("mtype"));
-				vo.setBusno(rs.getString("busno"));
-//				vo.setMid(rs.getString(1));
-//				vo.setMname(rs.getString(2));
-//				vo.setMauthcode(rs.getString(3));
-//				vo.setMtype(rs.getInt(5));
-//				vo.setBusno(rs.getString(4));
+				vo.setMember_id(rs.getString("member_id"));
+				vo.setMember_pwd(rs.getString("member_pwd"));
+
 			}
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -170,13 +198,6 @@ List<MemberVo> volist = null;
 			JdbcTemplate.close(rs);
 			JdbcTemplate.close(pstmt);
 		}
-		
-		
 		return vo;
 	}
-	
-	
-	
-	
-	
 }
