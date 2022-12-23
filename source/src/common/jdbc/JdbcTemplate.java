@@ -30,6 +30,16 @@ public class JdbcTemplate {
 //		C:\z_workspace\java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\my_web_5_board\WEB-INF\classes\common\jdbc
 		return conn;
 	}
+	public static void commit(Connection conn) {
+		try {
+			if(conn!=null && !conn.isClosed()) conn.commit();
+		} catch (Exception e) {			e.printStackTrace();		}
+	}
+	public static void rollback(Connection conn) {
+		try {
+			if(conn!=null && !conn.isClosed()) conn.rollback();
+		} catch (Exception e) {			e.printStackTrace();		}
+	}
 	public static void close(Connection conn) {
 		try {
 			if(conn!=null && !conn.isClosed()) conn.close();
@@ -46,14 +56,5 @@ public class JdbcTemplate {
 		} catch (Exception e) {			e.printStackTrace();		}
 	}
 	
-	public static void commit(Connection conn) {
-		try {
-			if(conn!=null && !conn.isClosed()) conn.commit();
-		} catch (Exception e) {			e.printStackTrace();		}
-	}
-	public static void rollback(Connection conn) {
-		try {
-			if(conn!=null && !conn.isClosed()) conn.rollback();
-		} catch (Exception e) {			e.printStackTrace();		}
-	}
+
 }
