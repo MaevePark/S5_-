@@ -1,6 +1,6 @@
 package kh.s5.nvot.member.model;
 
-import java.sql.Date;  // 중요 
+import java.sql.Date;
 
 public class MemberVo {
 //	MEMBER_ID           NOT NULL VARCHAR2(30)  
@@ -28,7 +28,11 @@ public class MemberVo {
 	private Date member_birthday;
 	private int member_email_agree;
 	private int member_sms_agree;
-	
+
+	public MemberVo() {
+		super();
+	}
+
 	public MemberVo(String member_id, String member_pwd, String member_name, String member_email,
 			String member_cellphone, String member_tel, String member_address_post, String member_address_1,
 			String member_address_2, Date member_birthday, int member_email_agree, int member_sms_agree) {
