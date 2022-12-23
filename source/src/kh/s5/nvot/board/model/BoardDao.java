@@ -20,14 +20,15 @@ public class BoardDao {
 		System.out.println(">>>>BoardDao Param :"+ vo);
 		int result = 0;
 		
-		String sql = "insert into board (BOARD_NO, BOARD_TITLE, BOARD_CONTENT, BOARD_WRITER, BOARD_CATEGORY_CODE)";
-		sql += "VALUES ----todo VALUES 입력하기----";
+		String sql = "insert into board (board_no, board_title, board_content, board_writer, "
+				+ "board_category_code)";
+		sql += "VALUES ----VALUES 입력하기----"; //TODO
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, vo.getBOARD_TITLE());
-			pstmt.setString(2, vo.getBOARD_CONTENT());
-			pstmt.setString(3, vo.getBOARD_WRITER());
+			pstmt.setString(1, vo.getBoard_title());
+			pstmt.setString(2, vo.getBoard_content());
+			pstmt.setString(3, vo.getBoard_writer());
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -40,16 +41,16 @@ public class BoardDao {
 		return result;
 	}
 //	update - 수정
-	public int update(Connection conn, BoardVo vo, int BOARD_NO/*주로 PK*/) {
+	public int update(Connection conn, BoardVo vo, int board_no/*주로 PK*/) {
 		int result = 0;
 
-		String sql = "update board set BOARD_TITLE=? BOARD_CONTENT=? where BOARD_NO=?";
+		String sql = "update board set board_title=? board_content=? where board_no=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, vo.getBOARD_TITLE());
-			pstmt.setString(2, vo.getBOARD_CONTENT());
-			pstmt.setInt(3, BOARD_NO);
+			pstmt.setString(1, vo.getBoard_title());
+			pstmt.setString(2, vo.getBoard_content());
+			pstmt.setInt(3, board_no);
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -60,14 +61,14 @@ public class BoardDao {
 		return result;
 	}
 //	delete  - 삭제
-	public int delete(Connection conn, int BOARD_NO/*주로 PK*/) {
+	public int delete(Connection conn, int board_no/*주로 PK*/) {
 		int result = 0;
 		
-		String sql = "delete from board where BOARD_CONTENT=?";
+		String sql = "delete from board where board_content=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, BOARD_NO);
+			pstmt.setInt(1, board_no);
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -90,13 +91,12 @@ public class BoardDao {
 				volist = new ArrayList<BoardVo>();
 				do {
 					BoardVo vo = new BoardVo();
-					vo = new BoardVo();
-					vo.setBOARD_NO(rs.getInt("BOARD_NO"));
-					vo.setBOARD_TITLE(rs.getString("BOARD_TITLE"));
-					vo.setBOARD_CONTENT(rs.getString("BOARD_CONTENT"));
-					vo.setBOARD_WRITER(rs.getString("BOARD_WRITER"));
-					vo.setBOARD_DATE(rs.getTimestamp("BOARD_DATE"));
-					vo.setBOARD_CATEGORY_CODE(rs.getInt("BOARD_CATEGORY_CODE"));
+					vo.setBoard_no(rs.getInt("board_no"));
+					vo.setBoard_title(rs.getString("board_title"));
+					vo.setBoard_content(rs.getString("board_content"));
+					vo.setBoard_writer(rs.getString("board_writer"));
+					vo.setBoard_date(rs.getTimestamp("board_date"));
+					vo.setBoard_category_code(rs.getInt("board_category_code"));
 					volist.add(vo);
 				} while(rs.next());
 			}
@@ -110,23 +110,23 @@ public class BoardDao {
 		return volist;
 	}
 //	selectOne - 상세조회
-	public BoardVo selectOne(Connection conn, int BOARD_NO/*주로 PK*/){
+	public BoardVo selectOne(Connection conn, int board_no/*주로 PK*/){
 		BoardVo result = null;
-		String sql = "select * from board where bno=?";
+		String sql = "select * from board where board_no=?";
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, BOARD_NO);
+			pstmt.setInt(1, board_no);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				result = new BoardVo();
-				result.setBOARD_NO(rs.getInt("BOARD_NO"));
-				result.setBOARD_TITLE(rs.getString("BOARD_TITLE"));
-				result.setBOARD_CONTENT(rs.getString("BOARD_CONTENT"));
-				result.setBOARD_WRITER(rs.getString("BOARD_WRITER"));
-				result.setBOARD_DATE(rs.getTimestamp("BOARD_DATE"));
-				result.setBOARD_CATEGORY_CODE(rs.getInt("BOARD_CATEGORY_CODE"));
+				result.setBoard_no(rs.getInt("board_no"));
+				result.setBoard_title(rs.getString("board_title"));
+				result.setBoard_content(rs.getString("board_content"));
+				result.setBoard_writer(rs.getString("board_writer"));
+				result.setBoard_date(rs.getTimestamp("board_date"));
+				result.setBoard_category_code(rs.getInt("board_category_code"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
