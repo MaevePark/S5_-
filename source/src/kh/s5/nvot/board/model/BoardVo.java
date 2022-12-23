@@ -24,6 +24,10 @@ public class BoardVo {
 
 // bfile 테이블에 대한 방법 1
 	private List<BoardFileVo> bfilelist;
+	
+	public BoardVo() {
+		super();
+	}
 
 	public BoardVo(int board_no, String board_title, String board_content, String board_writer, Timestamp board_date,
 			int board_category_code, List<BoardFileVo> bfilelist) {
