@@ -16,18 +16,18 @@ public class MemberService {
 		return result;
 	}
 //	update - 수정
-	public int update(MemberVo vo, String MEMBER_ID/*주로 PK*/) {
+	public int update(MemberVo vo, String member_id/*주로 PK*/) {
 		int result = 0;
 		Connection conn = JdbcTemplate.getConnection();
-		result = dao.update(conn, vo, MEMBER_ID);
+		result = dao.update(conn, vo, member_id);
 		JdbcTemplate.close(conn);
 		return result;
 	}
 //	delete  - 삭제
-	public int delete(String MEMBER_ID/*주로 PK*/) {
+	public int delete(String member_id/*주로 PK*/) {
 		int result = 0;
 		Connection conn = JdbcTemplate.getConnection();
-		result = dao.delete(conn, MEMBER_ID);
+		result = dao.delete(conn, member_id);
 		JdbcTemplate.close(conn);	
 		return result;
 	}
@@ -40,10 +40,10 @@ public class MemberService {
 		return volist;
 	}
 //	selectOne - 상세조회
-	public MemberVo selectOne(String MEMBER_ID/*주로 PK*/){
+	public MemberVo selectOne(String member_id/*주로 PK*/){
 		MemberVo vo = null;
 		Connection conn = JdbcTemplate.getConnection();
-		vo = dao.selectOne(conn, MEMBER_ID);
+		vo = dao.selectOne(conn, member_id);
 		JdbcTemplate.close(conn);
 		return vo;
 	}
