@@ -1,0 +1,23 @@
+/* 취소 버튼 */
+.btn_member_cancel {
+    width: 150px;
+    height: 45px;
+    color: #3e3d3c;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    cursor: pointer;
+}
+/* 회원가입 버튼 */
+.btn_comfirm {
+    width: 150px;
+    height: 45px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #383838;
+    background: #383838;
+    cursor: pointer;
+    font-weight: bold;
+}
