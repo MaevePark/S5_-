@@ -68,13 +68,6 @@ select{height:31px; color:#717171; vertical-align:top; outline:none;}
 #wrap .chosen-container .chosen-results li.active-result{text-align:left;}
 #wrap .chosen-container .chosen-results li.disabled-result{text-align:left;}
 
-/*#quick_search .chosen-container{vertical-align:top; text-align:left;}
-#quick_search .chosen-single{height:31px; color:#717171; vertical-align:top; outline:none; border:1px solid #cccccc;}
-#quick_search .chosen-single > span{line-height:30px;}
-#quick_search .chosen-container .chosen-results li{float:none;}
-#quick_search .chosen-container .chosen-drop{border:1px solid #cccccc; border-top:none 0;}
-#quick_search .chosen-container .chosen-results li.active-result{text-align:left;}*/
-
 /* 레이어팝업 셀렉트 박스 */
 .layer_wrap .chosen-container{vertical-align:top;}
 .layer_wrap .chosen-container .chosen-single{height:31px; color:#717171; vertical-align:top; outline:none; border:1px solid #cccccc;}
