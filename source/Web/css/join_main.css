@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* 전체 */
+.join_base_wrap, .join_agreement_wrap {
+    margin: 0 auto;
+}
+#container.subPageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+#contents {
+    padding: 0 0 40px 0;
+}
+#contents {
+    padding: 0 0 60px 0;
+}
+#contents {
+    min-height: 400px;
+    padding: 0 0 80px 0;
+}
+#contents .sub_content {
+    /* max-width: initial; */
+    max-width: 100%;
+    padding: 0;
+    margin: 15px auto 0;
+}
+.content_box {
+    float: left;
+    width: 100%;
+}
+.join_agreement_wrap {
+    margin: 0 auto;
+}
+.member_tit, .join_base_wrap .member_tit, .join_agreement_wrap .member_tit {
+    padding: 20px 5px 0;
+}
+.member_tit, .join_base_wrap .member_tit, .join_agreement_wrap .member_tit {
+    padding: 20px 0 0 0;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+}
+/* 회원가입 title */
+.join_agreement_wrap .member_tit {
+    overflow: hidden;
+}
+.member_tit h2, .join_base_wrap .member_tit h2, .join_agreement_wrap .member_tit h2 {
+    font-size: 18px;
+}
+.member_tit h2, .join_agreement_wrap .member_tit h2 {
+    padding: 0 0 8px 0;
+    display: inline-block;
+    color: #333;
+    border-bottom: 3px solid #333;
+    font-size: 22px;
+}
+.join_agreement_wrap .member_tit h2 {
+    float: left;
+    font-size: 28px;
+    color: #222222;
+}
+/* 약관동의,정보입력,가입완료 */
+.join_agreement_wrap .member_tit ol {
+    line-height: 24px;
+}
+.join_agreement_wrap .member_tit ol {
+    float: right;
+    line-height: 62px;
+}
+.join_agreement_wrap .member_tit .page_on {
+    color: #000;
+}
+.join_agreement_wrap .member_tit ol {
+    line-height: 24px;
+}
+.join_agreement_wrap .member_tit ol li {
+    float: left;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+.join_agreement_wrap .member_tit li span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.join_agreement_wrap .member_tit li span {
+    font-size: 16px;
+}
+.join_agreement_wrap .member_tit .page_on {
+    color: #000;
+}
+.join_agreement_wrap .member_tit li span > img {
+    padding: 0 14px;
+    vertical-align: -1px;
+}
+.join_agreement_wrap .member_cont h3 {
+    padding: 0 0 17px 0;
+    font-weight: normal;
+    font-size: 18px;
+    color: #222222;
+}
+.join_agreement_wrap .join_agreement_cont {
+    padding: 30px 0 0 0;
+    border-top: 1px solid #999999;
+}
+/* 전체동의 */
+.join_agreement_cont .join_agreement_box {
+    margin: 0 0 30px 0;
+}
+.form_element {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.join_agreement_cont .join_agreement_box {
+    margin: 0 0 30px 0;
+}
+.form_element {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+/* 필수동의 */
+.join_agreement_cont .form_element strong {
+    color: #383838;
+}
+.join_agreement_cont .form_element span {
+    color: #717171;
+    font-size: 11px;
+}
+.join_agreement_cont .form_element span > a {
+    color: #383838;
+}
+.join_agreement_cont .form_element span > a {
+    padding: 0 10px 0 5px;
+    color: #383838;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.join_agreement_cont .agreement_box {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 89px;
+    margin: 10px 0 0;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #999999;
+    line-height: 18px;
+}
+.join_agreement_cont .join_agreement_box {
+    margin: 0 0 30px 0;
+}
+/* 다음단계 */
+.member_cont .btn_center_box, .member_warning + .btn_center_box {
+    margin: 30px 0 0 0;
+}
+.btn_center_box {
+    text-align: center;
+}
+.btn_member_next {
+    font-size: 13px;
+    border: 1px solid #383838;
+    background: #383838;
+}
+.btn_member_next {
+    width: 150px;
+    height: 45px;
+    margin: 35px 0 0 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}

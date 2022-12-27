@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+.member_wrap{width:48.5%; min-width:593px;}
+.member_tit h2{font-size:24px; margin:0;}
+.join_base_wrap, .join_agreement_wrap {margin:0 auto;}
+
+.member_cont {border:1px solid #eaeaea;}
+.member_cont .btn_center_box,
+.member_warning + .btn_center_box{margin:30px 0 0 0;}
+
+/* 로그인 */
+.member_cont .member_login_box .login_input_sec > div{float:left; width:75%;}
+.member_cont .member_login_box .login_input_sec input{width:94%; border:1px solid #eaeaea;}
+.member_cont .member_login_box .login_input_sec button{width:25%; border:1px solid #383838; background:#383838;}
+.member_cont .member_login_box .login_input_sec button:hover{background:#f9f9f9; border:1px solid #dcdcdc; color:#3e3d3c;}
+.member_cont .btn_login_box{text-align:center; font-size:0;}
+.member_cont .btn_login_box li{float:none; display:inline-block; margin:0 2px;}
+.member_cont .btn_login_box li:first-child{margin:0 2px;}
+
+.member_cont .member_login_box .id_chk{padding:0 0 15px 0;}
+
+/* 비회원 주문조회 */
+.member_cont .nonmember_order_box .order_input_sec > div{width: 75%;}
+.member_cont .nonmember_order_box .order_input_sec input{width:94%; border:1px solid #eaeaea;}
+.member_cont .nonmember_order_box .order_input_sec button{width:25%; border:1px solid #383838; color:#383838; }
+.member_cont .nonmember_order_box .order_input_sec button:hover{border:1px solid #dcdcdc; color:#3e3d3c; background:#f9f9f9;}
+@media screen and (max-width:860px){
+	.member_wrap{width:80%; margin:0 auto 20px auto; min-width:auto;}
+	.member_cont{padding:30px 15px !important; width:auto !important;}	
+
+	.member_cont .member_login_box h3 {font-size:14px;}
+	.member_cont .member_login_box .login_input_sec > div,
+	.member_cont .nonmember_order_box .order_input_sec > div{clear:both; width:100%;}
+	.member_cont .member_login_box .login_input_sec input,
+	.member_cont .nonmember_order_box .order_input_sec input{ width:100% !important; margin:10px 0 8px 0;}
+	.member_cont .member_login_box .login_input_sec button,
+	.member_cont .nonmember_order_box .order_input_sec button{clear:both; width:100%; display:block; height:36px; margin:5px 0 8px 0; font-size: 14px;}
+
+	.member_cont .btn_login_box,.member_cont .nonmember_join_box {margin:10px auto 0;}
+
+	.join_base_wrap, .join_agreement_wrap {margin:0 auto 20px auto;}
+}
+@media screen and (max-width:420px){
+	.member_wrap{width:90%;}
+	.member_cont{padding:20px 10px !important;}
+
+	.member_cont .btn_login_box {margin:10px auto;}
+}
+/* 비밀번호 찾기 */
+.find_password_box .login_input{clear:both; margin:0 auto; text-align:center;}
+.find_password_box .login_input .member_warning{width:100%; margin:0 auto;}
+.find_password_box .login_input input[type=text],
+.find_password_box .login_input input[type=password]{width:100%; margin:10px 0;}
+
+/* 비밀번호 변경 */
+.find_password_reset_box .login_input{clear:both; width:100%; padding:30px 0 0 0; }
+.find_password_reset_box .login_input input{width:100%; border:1px solid #eaeaea;}
+
+/* 아이디 찾기 완료, 비밀번호 변경 완료 */
+.find_complete_box p{padding:15px 0 30px 0; font-size:15px;}
+.find_complete_box .find_id_name{color:#383838;}
+
+/* 아이디 찾기 */
+.find_id_sec .login_input > div{width:75%;}
+.find_id_sec .login_input input{width:94%; border:1px solid #eaeaea;}
+.find_id_sec > p{color:#383838;}
+.find_id_sec .login_input button{float:right; width:25%; height:91px; margin:15px 0 0 0; border:1px solid #383838; background:#fff; color:#383838; font-size: 15px; font-weight:normal; cursor:pointer;}
+.find_id_sec .login_input button:hover{border:1px solid #dcdcdc; background:#f9f9f9; color:#3e3d3c;}
+.email_select {margin:9px 0 10px 0;}
+@media screen and (max-width:860px){
+	.find_id_sec .login_input > div {clear:both; width:100%;}
+	.find_id_sec .login_input input { width:100%; margin:10px 0 8px 0;}
+	.find_id_box .login_input button {clear:both; width:100%; display:block; height:36px; margin:5px 0 8px 0; font-size: 14px;}
+}
+
+/* 회원가입 완료 */
+.join_ok_box .btn_member_sec .btn_login{background: #383838; border:1px solid #383838; color: #fff;}
+.join_ok_box .btn_member_sec .btn_login:hover{border:1px solid #dcdcdc; color: #3e3d3c; background:#f9f9f9;}
+
+/* 회원승인 대기 */
+.join_wait_box .join_wait_tit .complete strong{color:#383838;}
+
+/* 휴면회원 해제 선택 */
+.wake_base_box .wake_date dd strong{color:#383838;}
+
+/* 휴면회원 해제 완료 */
+.wake_complete_box .wake_complete_tit p{padding:20px 0 20px 0; font-size:18px; color:#222222;}
+.wake_complete_box .wake_complete_tit p strong{font-weight:bold;}
+.wake_complete_box .btn_member_sec{border-top:1px solid #dbdbdb;}
+.wake_complete_box .btn_member_sec ul{overflow:hidden; margin:20px 0 0 0; text-align:center; font-size:0;}
+.wake_complete_box .btn_member_sec li{display:inline-block;}
+.wake_complete_box .btn_member_sec li button{width: 150px; height: 42px; border:1px solid #6b6b6b; background: #6b6b6b; color: #fff; font-weight:bold; font-size: 13px; cursor:pointer;}
+.wake_complete_box .btn_member_sec li button:hover{border:1px solid #626262; color: #fff; background:#626262;}
+
+.wake_wrap{position: relative;background-color:#fafafa;padding:40px 30px 40px 30px;}            
+.wake_wrap img{position: absolute;left: 30px;top:50%;vertical-align:middle;margin: -19px 0 0 0;}            
+.wake_inner{display:block;vertical-align:middle;padding: 0 0 0 90px;}            
+.wake_inner strong{font-size:15px; color:#222;letter-spacing:-1px;}            
+.wake_inner ul{font-size:12px; color:#5e5e5e;margin:5px 0 0 0;line-height:1.8em;}            
+.wake_inner ul li{position: relative;padding:0 0 0 10px;}            
+.wake_inner ul li:before{position: absolute;left:0;content:"-";}            
+.wake_complete_box .btn_member_sec{border: 0;}            
+.wake_complete_box .btn_member_sec ul{margin: 35px 0 0 0;}
+
+/* 휴면회원 해제 인증 */
+.wake_certify_box .wake_certify_input input{width:90%; border:1px solid #eaeaea;}
+@media screen and (max-width:760px){
+	.wake_base_box .wake_date dl,.wake_certify_box .wake_date dl {float:none; clear:both; width:100%;}
+	#wrap .wake_base_box .wake_certify_input .member_warning {width:90%; margin:0 auto;}
+	.wake_complete_box .wake_complete_tit p,.wake_base_box .wake_base_tit .complete,
+	.wake_certify_box .wake_certify_tit .complete {font-size:14px;}
+}
+@media screen and (max-width:400px){
+	.wake_base_box .wake_date,.wake_certify_box .wake_date {padding:10px 15px 15px 15px;}
+	.wake_complete_box .wake_complete_tit p,.wake_base_box .wake_base_tit .complete,
+	.wake_certify_box .wake_certify_tit .complete  {font-size:13px;}
+}
+
+/* 비밀번호 변경안내 */
+@media screen and (max-width:760px){
+	.password_change{padding:50px 40px;}
+	.password_change .password_change_tit strong{font-size:20px;}
+	.password_change .password_change_tit span{font-size:14px;}
+	.password_change .password_change_input input,.password_change .password_change_input .new_password{width:90%;}
+}
+@media screen and (max-width:400px){
+	.password_change{padding:30px 20px;}
+	.password_change .password_change_tit strong{font-size:16px;}
+}
+
+/* 회원가입 정보입력 */
+.join_base_wrap .member_tit h2{font-size:24px;}
+.join_base_wrap .member_tit ol{line-height: 24px;}
+.join_base_wrap .member_tit .page_on{color:#383838;}
+.join_base_wrap .member_cont{width:auto; padding:50px 50px;}
+
+.base_info_box > span{color:#383838;}
+.base_info_sec table input[type="text"]{width:80%;}
+
+/* 비밀번호 영역 */
+.member_pw_change input[type="password"]{width:80%;}
+@media screen and (max-width:760px){
+.member_pw_change input[type="password"]{width:50%;}
+}
+/* 사업자 정보 */
+.business_info_sec table input[type="text"]{width:80%;}
+
+/* 부가정보 */
+.addition_info_sec table input[type="text"]{width:80%;}
+
+/* 회원가입 약관동의 /상단 수정부분/ */
+.member_tit,
+.join_base_wrap .member_tit,
+.join_agreement_wrap .member_tit {padding:20px 0 0 0; margin: 0 0 20px; font-size: 14px; border-bottom: 1px solid #eaeaea;}
+.member_tit h2,
+.join_base_wrap .member_tit h2,
+.join_agreement_wrap .member_tit h2{ padding: 0 0 8px 0;
+    display: inline-block;
+    color: #333;
+    border-bottom: 3px solid #333;
+	font-size:22px;
+}
+@media screen and (max-width:1240px){
+	.member_tit,
+	.join_base_wrap .member_tit,
+	.join_agreement_wrap .member_tit {padding:20px 5px 0;}
+}
+@media screen and (max-width:760px){
+	.member_tit h2,
+	.join_base_wrap .member_tit h2,
+	.join_agreement_wrap .member_tit h2{ font-size:18px; }
+	.join_agreement_wrap .member_tit ol,
+	.join_base_wrap .member_tit ol {display:none}
+}
+@media screen and (max-width:400px){
+	.member_tit h2,
+	.join_base_wrap .member_tit h2,
+	.join_agreement_wrap .member_tit h2{ font-size:16px; }
+}
+.join_agreement_wrap .member_tit ol{line-height: 24px;}
+.join_agreement_wrap .member_tit .page_on{color:#000;}
+.join_agreement_wrap .member_cont{width:auto; padding:50px 50px;}
+
+.join_agreement_cont .form_element strong{color:#383838;}
+.join_agreement_cont .form_element strong.choice{color:#383838;}
+.join_agreement_cont .form_element span > a{color:#383838;}
+.join_agreement_cont .important_check_box .important_check{color:#383838;}
+
+/* 가입방법 선택 */
+.member_cont .member_login_box .member_login_shop{margin:0 0 20px 0; padding:0 0 20px 0; border-bottom:1px solid #dcdcdc;}
+.member_guide_txt{text-align:center; padding:18px 0 20px 0; color:#666666;}
+.member_guide_txt a:hover{text-decoration:underline;}
+
+.info_again{ text-align:center; line-height:20px;;}
+.info_again a{color:#383838;}
+
+
+/* ----------------  회원가입 레이아웃 ------------------------------ */
+
+/* 회원가입 이메일 */
+.base_info_sec .member_email input[type="text"]{width:50%;}
+.base_info_sec .member_email select{width:120px !important;}
+
+/* 생일 */
+.addition_info_sec .member_birthday input[type="text"]{width:50%;}
+.addition_info_sec .member_birthday select{width:120px !important;}
+/* 주소 */
+#contents .member_address .address_input{width:100%;}
+
+.find_password_complete_box {text-align:center;}
+@media screen and (max-width:860px){
+	.member_cont h3 {font-weight:normal; font-size:14px;}
+}
+@media screen and (max-width:760px){
+	.join_agreement_wrap {margin:0 auto 10px;}
+}
+@media screen and (max-width:700px){
+	.join_ok_box .btn_member_sec li button,
+	.user_certify_box .btn_member_sec li button,
+	.wake_complete_box .btn_member_sec li button,
+	.join_agreement_wrap .btn_member_sec li button { width:80px; height:40px; font-size:12px;}
+}
+@media screen and (max-width:560px){
+	.member_warning_info {width:94%; margin:15px 3% 0;}
+}
