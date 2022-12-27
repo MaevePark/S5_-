@@ -4,7 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>join_main</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>join_main</title>
+    
+	<link href="<%=request.getContextPath()%>/css/reset.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/css/member_a.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/css/member_b.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/css/join_main.css" rel="stylesheet">
+	<script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
+    
 </head>
 <body>
     <div id="container" class="subPageContainer">
