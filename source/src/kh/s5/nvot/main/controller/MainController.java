@@ -25,7 +25,7 @@ public class MainController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String viewPath = "WEB-INF/view/index.jsp";
+		String viewPath = "WEB-INF/view/member/index.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 	}
 }
