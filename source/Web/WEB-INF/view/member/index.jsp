@@ -1,35 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./css/reset.css" />
-<link rel="stylesheet" href="./css/common.css" />
-<link rel="stylesheet" href="./css/member_a.css" />
-<link rel="stylesheet" href="./css/member_b.css" />
-<link rel="stylesheet" href="./css/layout.css" />
-<link rel="stylesheet" href="./css/section.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/reset.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/common.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/member_a.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/member_b.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/layout.css" />
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/section.css" />
 
-<script src="./js/jquery-3.6.1.js"></script>
-<script src="./js/header.js"></script>
+<script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
+<script src="<%=request.getContextPath()%>/js/header.js"></script>
 <title>메인페이지</title>
-</head>
-<body>
-	<%@include file="/WEB-INF/view/member/header.jsp"%>
-	<div id="container">
-		<div id="contents">
-			<!-- 본문 시작 -->
 
-			<!-- //location_wrap -->
-
-			<div class="sub_content">
-
-				<!-- //side_cont -->
-
-				<style>
+<style>
 /*메인 슬라이드 영역  높이값은 675px 로 측정되어 있습니다. */
 .mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
 	.mainTopSildeWrap .mainTopSilde .slick-slide {
@@ -67,109 +62,13 @@
 }
 </style>
 
-				<div class="mainSildeWrap mainTopSildeWrap">
-					<div
-						class="slideContainer mainTopSilde slick-initialized slick-slider slick-dotted"
-						role="toolbar">
-						<button type="button" data-role="none"
-							class="slick-prev slick-arrow" aria-label="Previous"
-							role="button">Previous</button>
-						<div aria-live="polite" class="slick-list draggable"
-							style="height: 675px;">
-							<div class="slick-track" style="opacity: 1; width: 13140px;"
-								role="listbox">
-								<div class="wideImages slick-slide"
-									style="background: url(&quot;/data/skin/front/mplshop/img/banner/440181e94ba029dd85f9fe314ed28731_91647.jpg&quot;) center top no-repeat; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; width: 2628px; transition: opacity 300ms ease 0s;"
-									title="미니멀웍스 피에뜨랜턴" data-slick-index="0" aria-hidden="true"
-									tabindex="-1" role="option" aria-describedby="slick-slide00">
-									<a
-										href="http://nvot.co.kr/goods/goods_view.php?goodsNo=1000001118"
-										target="" tabindex="-1"></a>
-								</div>
-								<div class="wideImages slick-slide"
-									style="background: url(&quot;/data/skin/front/mplshop/img/banner/e1b75a9882f41f42ff4eea5e62fb46bc_74818.jpg&quot;) center top no-repeat; position: relative; left: -2628px; top: 0px; z-index: 998; opacity: 0; width: 2628px; transition: opacity 300ms ease 0s;"
-									title="미니멀웍스 온기" data-slick-index="1" aria-hidden="true"
-									tabindex="-1" role="option" aria-describedby="slick-slide01">
-									<a
-										href="http://nvot.co.kr/goods/goods_view.php?goodsNo=1000001069"
-										target="" tabindex="-1"></a>
-								</div>
-								<div class="wideImages slick-slide"
-									style="background: url(&quot;/data/skin/front/mplshop/img/banner/31d7fae1a7aae2f3c27c8465817f2be7_67263.jpg&quot;) center top no-repeat; position: relative; left: -5256px; top: 0px; z-index: 998; opacity: 0; width: 2628px; transition: opacity 300ms ease 0s;"
-									title="미니멀웍스 랜드마크" data-slick-index="2" aria-hidden="true"
-									tabindex="-1" role="option" aria-describedby="slick-slide02">
-									<a
-										href="http://nvot.co.kr/goods/goods_view.php?goodsNo=1000001073"
-										target="" tabindex="-1"></a>
-								</div>
-								<div class="wideImages slick-slide slick-current slick-active"
-									style="background: url(&quot;/data/skin/front/mplshop/img/banner/7ebd47454ef2f456581d535b162eea9c_68044.jpg&quot;) center top no-repeat; position: relative; left: -7884px; top: 0px; z-index: 999; opacity: 1; width: 2628px;"
-									title="미니멀웍스 라마 1400" data-slick-index="3" aria-hidden="false"
-									tabindex="-1" role="option" aria-describedby="slick-slide03">
-									<a
-										href="http://nvot.co.kr/goods/goods_view.php?goodsNo=1000001072"
-										target="" tabindex="0"></a>
-								</div>
-								<div class="wideImages slick-slide"
-									style="background: url(&quot;/data/skin/front/mplshop/img/banner/a255a91b4024505c62c545760793cc48_81479.jpg&quot;) center top no-repeat; position: relative; left: -10512px; top: 0px; z-index: 998; opacity: 0; width: 2628px; transition: opacity 300ms ease 0s;"
-									title="미니멀웍스 케틀 부글" data-slick-index="4" aria-hidden="true"
-									tabindex="-1" role="option" aria-describedby="slick-slide04">
-									<a
-										href="http://nvot.co.kr/goods/goods_view.php?goodsNo=1000001057"
-										target="" tabindex="-1"></a>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-
-
-
-						<button type="button" data-role="none"
-							class="slick-next slick-arrow" aria-label="Next" role="button">Next</button>
-						<ul class="slick-dots" role="tablist">
-							<li class="" aria-hidden="true" role="presentation"
-								aria-selected="true" aria-controls="navigation00"
-								id="slick-slide00"><button class="tab" role="button">
-									미니멀웍스 피에뜨랜턴
-									<div class="lineBg"></div>
-								</button></li>
-							<li aria-hidden="true" class="" role="presentation"
-								aria-selected="false" aria-controls="navigation01"
-								id="slick-slide01"><button class="tab" role="button">
-									미니멀웍스 온기
-									<div class="lineBg"></div>
-								</button></li>
-							<li aria-hidden="true" role="presentation" aria-selected="false"
-								aria-controls="navigation02" id="slick-slide02" class=""><button
-									class="tab" role="button">
-									미니멀웍스 랜드마크
-									<div class="lineBg"></div>
-								</button></li>
-							<li aria-hidden="false" role="presentation" aria-selected="false"
-								aria-controls="navigation03" id="slick-slide03"
-								class="slick-active"><button class="tab" role="button">
-									미니멀웍스 라마 1400
-									<div class="lineBg"></div>
-								</button></li>
-							<li aria-hidden="true" role="presentation" aria-selected="false"
-								aria-controls="navigation04" id="slick-slide04" class=""><button
-									class="tab" role="button">
-									미니멀웍스 케틀 부글
-									<div class="lineBg"></div>
-								</button></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- 
-    ※※ 메인 상단 배너 영역 ※※ 
-    해당 부분 숨김 처리 class="mainContainer mTop50_ displaynone" 또는 주석처리 
-    class에 displaynone을 추가하십시요.
--->
+</head>
+<body>
+	<%@include file="/WEB-INF/view/member/header.jsp"%>
+	<div id="container">
+		<div id="contents">
+			<!-- 본문 시작 -->
+			<div class="sub_content">
 				<div class="mainContainer mTop50_">
 					<div class="mainTopLeftBanner">
 						<ul>
@@ -192,13 +91,6 @@
 						</ul>
 					</div>
 				</div>
-
-				<!-- 
-    ※※ 메인 상단(하단) 2단 배너 영역 ※※ 
-    해당 부분 숨김 처리 class="mainContainer mTop50_ displaynone" 또는 주석처리 
-    class에 displaynone을 추가하십시요.
--->
-				<!--   -->
 				<div class="mainContainer mTop20">
 					<div class="mainBanner">
 						<ul class="cols2_top">
@@ -213,10 +105,8 @@
 						</ul>
 					</div>
 				</div>
-
 				<!-- ※※ HIT PRODUCT 진열 영역 ※※ -->
 				<div class="main_goods_cont">
-
 					<div class="goods_list main_wrap_7">
 						<div class="goods_list_tit">
 							<h3>MD PICK</h3>
@@ -230,488 +120,76 @@
 						<div class="goods_list_cont goods_content_7">
 							<div class="item_gallery_type">
 								<ul>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001119&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/48/1000001119/1000001119_main_080.jpg"
-													width="400" alt="골제로 라이트 하우스 마이크로 플래쉬 랜턴" title=""
-													class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001119"
-														data-goods-nm="골제로 라이트 하우스 마이크로 플래쉬 랜턴"
-														data-goods-price="53000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/48/1000001119/1000001119_main_080.jpg"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001119">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
+									<!--상품 목록 DB 가져오기-->
+									<c:forEach items="${productlist }" var="product">
+										<li style="width: 25%;">
+											<div class="item_cont">
+												<p class="mpl_best">BEST 1</p>
+												<div class="item_photo_box">
 													<a
 														href="../goods/goods_view.php?goodsNo=1000001119&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">골제로 라이트 하우스 마이크로 플래쉬 랜턴</strong>
+														<img
+														src="${product.product_image_list[0].product_image_code }"
+														width="400" alt="골제로 라이트 하우스 마이크로 플래쉬 랜턴" title=""
+														class="middle">
 													</a>
+													<div class="item_link">
+														<button type="button"
+															class="btn_basket_get btn_add_wish_7"
+															data-goods-no="1000001119"
+															data-goods-nm="골제로 라이트 하우스 마이크로 플래쉬 랜턴"
+															data-goods-price="53000.00"
+															data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/48/1000001119/1000001119_main_080.jpg"
+															data-optionfl="n" data-min-order-cnt="1"
+															data-option-sno="" data-goods-image=""
+															data-sales-unit="1" data-fixed-sales="option"
+															data-fixed-order-cnt="option">
+															<span>WISH</span>
+														</button>
+														<button type="button" href="#optionViewLayer"
+															class="btn_basket_cart btn_add_cart_7 btn_open_layer"
+															data-mode="cartIn" data-goods-no="1000001119">
+															<span>CART</span>
+														</button>
+													</div>
 												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="53000.00"></div>
-														<span style="">53,000원 </span>
+												<!-- //item_photo_box -->
+												<div class="item_info_cont">
 
 
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 1,590원
-													</span>
+													<div class="item_tit_box">
+														<a
+															href="../goods/goods_view.php?goodsNo=1000001119&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
+															<strong class="item_name">
+																${product.product_name}</strong>
+														</a>
+													</div>
+													<!-- //item_tit_box -->
+													<div class="item_money_box">
+														<strong class="item_price">
+
+															<div class="dcPrice" custom="0.00" price="53000.00"></div>
+															<span style="">${product.product_price } </span>
+
+
+														</strong> <span class="item_mileage"> <img
+															src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
+															alt="마일리지" title=""> ${product.product_price/10 }원
+														</span>
+													</div>
+													<!-- //item_money_box -->
+													<!-- //item_number_box -->
+													<div class="item_icon_box">
+														<img
+															src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/icon/goods_icon/good_icon_best.gif"
+															alt="베스트상품" title="" class="middle">
+													</div>
+													<!-- //item_icon_box -->
 												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box">
-													<img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/icon/goods_icon/good_icon_best.gif"
-														alt="베스트상품" title="" class="middle">
-												</div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001118&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/47/1000001118/1000001118_main_081.jpg"
-													width="400" alt="미니멀웍스 피에뜨 랜턴" title="" class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001118" data-goods-nm="미니멀웍스 피에뜨 랜턴"
-														data-goods-price="88000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/47/1000001118/1000001118_main_081.jpg"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001118">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001118&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">미니멀웍스 피에뜨 랜턴</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="88000.00"></div>
-														<span style="">88,000원 </span>
-
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 2,640원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001101&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/44/1000001101/1000001101_main_057.jpg"
-													width="400" alt="미니멀웍스 잭 쉘터 플러스 블랙" title="" class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001101"
-														data-goods-nm="미니멀웍스 잭 쉘터 플러스 블랙"
-														data-goods-price="540000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/44/1000001101/1000001101_main_057.jpg"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001101">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001101&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">미니멀웍스 잭 쉘터 플러스 블랙</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="540000.00"></div>
-														<span style="">540,000원 </span>
-
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 16,200원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001100&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/44/1000001100/1000001100_main_061.jpg"
-													width="400" alt="미니멀웍스 잭 쉘터 플러스 탄" title="" class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001100"
-														data-goods-nm="미니멀웍스 잭 쉘터 플러스 탄"
-														data-goods-price="540000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/11/44/1000001100/1000001100_main_061.jpg"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001100">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001100&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">미니멀웍스 잭 쉘터 플러스 탄</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="540000.00"></div>
-														<span style="">540,000원 </span>
-
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 16,200원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001099&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/43/1000001099/1000001099_main_097.png"
-													width="400" alt="루메나 M3 테이블랜턴 패키지" title="" class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001099"
-														data-goods-nm="루메나 M3 테이블랜턴 패키지"
-														data-goods-price="99000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/43/1000001099/1000001099_main_097.png"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001099">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001099&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">루메나 M3 테이블랜턴 패키지</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="139000.00" price="99000.00"
-															style="display: block;">28%</div> <span style="">99,000원
-													</span> <span style="color: #888; text-decoration: line-through;">139,000원
-													</span>
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 2,970원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001094&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001094/1000001094_main_010.png"
-													width="400" alt="토요토미 기어미션 브라운 세트(상부망+가방)" title=""
-													class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001094"
-														data-goods-nm="토요토미 기어미션 브라운 세트(상부망+가방)"
-														data-goods-price="620000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001094/1000001094_main_010.png"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001094">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001094&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">토요토미 기어미션 브라운
-															세트(상부망+가방)</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="620000.00"></div>
-														<span style="">620,000원 </span>
-
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 18,600원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001095&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001095/1000001095_main_087.png"
-													width="400" alt="토요토미 기어미션 그린 세트(상부망+가방)" title=""
-													class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001095"
-														data-goods-nm="토요토미 기어미션 그린 세트(상부망+가방)"
-														data-goods-price="620000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001095/1000001095_main_087.png"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001095">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001095&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">토요토미 기어미션 그린 세트(상부망+가방)</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="0.00" price="620000.00"></div>
-														<span style="">620,000원 </span>
-
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 18,600원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
-									<li style="width: 25%;">
-										<div class="item_cont">
-											<p class="mpl_best">BEST 1</p>
-											<div class="item_photo_box">
-												<a
-													href="../goods/goods_view.php?goodsNo=1000001096&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-													<img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001096/1000001096_main_090.jpg"
-													width="400" alt="소싱 글램핑 오뚝이 스피커 무드등" title=""
-													class="middle">
-												</a>
-												<div class="item_link">
-													<button type="button" class="btn_basket_get btn_add_wish_7"
-														data-goods-no="1000001096"
-														data-goods-nm="소싱 글램핑 오뚝이 스피커 무드등"
-														data-goods-price="79000.00"
-														data-goods-image-src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/10/42/1000001096/1000001096_main_090.jpg"
-														data-optionfl="n" data-min-order-cnt="1"
-														data-option-sno="" data-goods-image="" data-sales-unit="1"
-														data-fixed-sales="option" data-fixed-order-cnt="option">
-														<span>WISH</span>
-													</button>
-													<button type="button" href="#optionViewLayer"
-														class="btn_basket_cart btn_add_cart_7 btn_open_layer"
-														data-mode="cartIn" data-goods-no="1000001096">
-														<span>CART</span>
-													</button>
-												</div>
-											</div>
-											<!-- //item_photo_box -->
-											<div class="item_info_cont">
-
-
-												<div class="item_tit_box">
-													<a
-														href="../goods/goods_view.php?goodsNo=1000001096&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
-														<strong class="item_name">소싱 글램핑 오뚝이 스피커 무드등</strong>
-													</a>
-												</div>
-												<!-- //item_tit_box -->
-												<div class="item_money_box">
-													<strong class="item_price">
-
-														<div class="dcPrice" custom="99000.00" price="79000.00"
-															style="display: block;">20%</div> <span style="">79,000원
-													</span> <span style="color: #888; text-decoration: line-through;">99,000원
-													</span>
-
-													</strong> <span class="item_mileage"> <img
-														src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-														alt="마일리지" title=""> 2,370원
-													</span>
-												</div>
-												<!-- //item_money_box -->
-												<!-- //item_number_box -->
-												<div class="item_icon_box"></div>
-												<!-- //item_icon_box -->
-											</div>
-											<!-- //item_info_cont -->
-										</div> <!-- //item_cont -->
-									</li>
+												<!-- //item_info_cont -->
+											</div> <!-- //item_cont -->
+										</li>
+									</c:forEach>
 								</ul>
 							</div>
 							<!-- //item_gallery_type -->
@@ -766,202 +244,20 @@
 								</div>
 							</div>
 							<!-- //layer_wrap -->
-
 							<!-- //cart template -->
-							<script type="text/javascript">
-							<!--
-								$(document)
-										.ready(
-												function() {
-													$('.item_photo_box')
-															.on(
-																	'click',
-																	'.btn_add_wish_7',
-																	function() {
-																		alert("로그인하셔야 본 서비스를 이용하실 수 있습니다.");
-																		document.location.href = "../member/login.php";
-																		return false;
-																	});
-
-													$('.item_photo_box')
-															.on(
-																	'click',
-																	'.btn_add_cart_7',
-																	function() {
-																		if ($(
-																				this)
-																				.data(
-																						'mode') == 'cartIn') {
-																			var params = {
-																				page : 'goods',
-																				type : 'goods',
-																				goodsNo : $(
-																						this)
-																						.data(
-																								'goods-no')
-																			};
-
-																			$
-																					.ajax({
-																						method : "POST",
-																						cache : false,
-																						url : "../goods/layer_option.php",
-																						data : params,
-																						success : function(
-																								data) {
-
-																							$(
-																									'#optionViewLayer')
-																									.empty()
-																									.append(
-																											data);
-																							$(
-																									'#optionViewLayer')
-																									.find(
-																											'>div')
-																									.center();
-																							$(
-																									window)
-																									.resize(
-																											function() {
-																												$(
-																														'#optionViewLayer')
-																														.find(
-																																'>div')
-																														.center();
-																											});
-																						},
-																						error : function(
-																								data) {
-																							alert(data.message);
-																						}
-																					});
-																		}
-																	});
-
-													$('.layer-cartaddconfirm')
-															.click(
-																	function() {
-																		location.href = '../order/cart.php';
-																	});
-
-													$('.btn_move_cart')
-															.click(
-																	function() {
-																		location.href = '../order/cart.php';
-																	});
-
-													$('.btn_move_wish')
-															.click(
-																	function() {
-																		location.href = '../mypage/wish_list.php';
-																	});
-
-												});
-
-								function gd_goods_option_view_result(params) {
-									params += "&mode=cartIn";
-									$.ajax({
-										method : "POST",
-										cache : false,
-										url : "../order/cart_ps.php",
-										data : params,
-										success : function(data) {
-											$("#optionViewLayer")
-													.addClass('dn');
-											$("#addCartLayer")
-													.removeClass('dn');
-											$('#layerDim').removeClass('dn');
-											$("#addCartLayer").find('> div')
-													.center();
-											$(window).resize(
-													function() {
-														$("#addCartLayer")
-																.find('> div')
-																.center();
-													});
-										},
-										error : function(data) {
-											alert(data.message);
-										}
-									});
-								}
-							//-->
-							</script>
 						</div>
 						<div class="btn_goods_down_more">
 							<button class="btn_goods_view_down_more" data-page="2">MORE
 								VIEW +</button>
 						</div>
 					</div>
-
-
-					<script type="text/javascript">
-					<!--
-						var keyValue7 = '7';
-						var key7 = {
-							html : 'html' + keyValue7,
-							page : 'page' + keyValue7
-						};
-						var gdStorage7 = loadSession(key7.html);
-						var page7 = loadSession(key7.page);
-						$(document)
-								.ready(
-										function() {
-											if (gdStorage7) {
-												$('.goods_content_7').html(
-														gdStorage7);
-												if (page7) {
-													$(
-															'.main_wrap_7 .btn_goods_view_down_more')
-															.attr('data-page',
-																	page7);
-												}
-											}
-											$(
-													'.main_wrap_7 .btn_goods_view_down_more')
-													.on(
-															'click',
-															function(e) {
-																gd_get_list_7($(
-																		this)
-																		.data(
-																				'page'));
-															});
-										});
-
-						function gd_get_list_7(page) {
-							$.get('../goods/goods_main.php', {
-								'mode' : 'get_main',
-								'more' : page,
-								'sno' : '7',
-								'groupSno' : ''
-							}, function(data) {
-								$(".goods_content_7").html(data);
-								saveSession(key7.html, data);
-								if (parseInt(page) + 1 > 6) {
-									$('.main_wrap_7 .btn_goods_view_down_more')
-											.hide();
-								} else {
-									saveSession(key7.page, parseInt(page) + 1);
-									$('.main_wrap_7 .btn_goods_view_down_more')
-											.data('page', parseInt(page) + 1);
-								}/*엠플샵 추가 스크립트*/
-								PerCentFixPrice();
-							});
-						}
-					//-->
-					</script>
-
 				</div>
-
 				<!-- ※※ WEEKLY BEST 진열 영역 ※※ -->
 				<div class="main_goods_cont">
 
 					<div class="goods_list main_wrap_1">
 						<div class="goods_list_tit">
 							<h3>WEEKLY BEST</h3>
-
 							<h4>한 주동안 엔보트의 인기상품</h4>
 							<div class="btn_goods_more">
 								<a href="../goods/goods_main.php?sno=1"
@@ -7167,340 +6463,6 @@
     해당 부분 숨김 처리 class="mainContainerHidden mTop70 mBot20 displaynone" 또는 주석처리 
     class에 displaynone을 추가하십시요.
 -->
-				<div class="mainContainerHidden mTop70 mBot20 displaynone">
-					<div class="mainContainer">
-						<div class="mainTitle">
-							<h2 class="titleTop">
-								REVIEW<a href="../board/list.php?bdId=goodsreview"
-									class="plusMore">MORE +</a>
-							</h2>
-							<h3 class="titleBottom">상품후기를 확인해보세요.</h3>
-						</div>
-						<!-- 
-            총 갯수 수정은  아래 소스중 10 부분을 수정하시기 바랍니다.  기본 10개 노출 
-            한줄에 나타나는 갯수를 수정하시려면  관리자 > 디자인 > 스킨폴더 > 게시판 > [위젯]게시글 리스트(_board_article.html) 파일 8번째 라인 <ul class="reviewWrap item w15">
-            w15 부분을 수정하시기 바랍니다.  w15 : 한줄 5개 노출 / w20 한줄 4개노출
-        -->
-						<div class="mainSildeWrap mTop40">
-							<link type="text/css" rel="stylesheet"
-								href="/data/skin/front/mplshop/_mplshop/css/masonry.css?ts=1581043070">
-
-							<script type="text/javascript"
-								src="/data/skin/front/mplshop/_mplshop/js/masonry.pkgd.min.js?ts=1581043073"></script>
-							<script type="text/javascript"
-								src="/data/skin/front/mplshop/_mplshop/js/imagesloaded.pkgd.js?ts=1581043072"></script>
-							<script type="text/javascript"
-								src="/data/skin/front/mplshop/_mplshop/js/lightbox-plus-jquery.min.js?ts=1581043073"></script>
-							<script type="text/javascript"
-								src="/data/skin/front/mplshop/_mplshop/js/lookbook.js?ts=1581043073"></script>
-							<div class="reviewListContainer masonry grid effect-1" id="grid"
-								style="position: relative; height: 0px;">
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/07/29/1000001044/1000001044_main_08.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="80" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="80" data-auth="y" data-notice="n">겨울엔 옴니죠</a> <a
-										class="reviewContent">빠른배송과 좋은 제품 너무 좋아요</a> <a
-										class="rating_star"> <span style="width: 100%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">장준*</span> <span class="board_day">2022.11.21</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000001044"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/22/07/29/1000001044/1000001044_main_08.jpg"
-													width="38px" height="38px" title=""> 토요토미 옴니230 세트
-													화이트(상부망+전용가방)</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/04/14/1000000574/1000000574_main_010.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="79" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="79" data-auth="y" data-notice="n">만족</a> <a
-										class="reviewContent">3계절 딱 좋은거같아요사이즈도 미니멀해서 기존 침낭에서 침이
-											확...</a> <a class="rating_star"> <span style="width: 100%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">박미*</span> <span class="board_day">2022.10.05</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000574"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/04/14/1000000574/1000000574_main_010.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 카멜레온 350
-													2.0</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/04/14/1000000574/1000000574_main_010.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="78" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="78" data-auth="y" data-notice="n">진작살걸후회해요 ㅎㅎ</a> <a
-										class="reviewContent">3계절 딱 좋은거같아요사이즈도 미니멀해서 기존 침낭에서 침이
-											확...</a> <a class="rating_star"> <span style="width: 100%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">박미*</span> <span class="board_day">2022.10.05</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000574"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/04/14/1000000574/1000000574_main_010.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 카멜레온 350
-													2.0</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/06/1000000049/1000000049_main_066.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="77" data-auth="n"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="77" data-auth="n" data-notice="n">올리브 파프리카</a> <a
-										class="reviewContent">비밀글 입니다.</a> <a class="rating_star">
-											<span style="width: 100%;">별 다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">박상*</span> <span class="board_day">2022.09.02</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000049"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/06/1000000049/1000000049_main_066.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 파프리카</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/07/29/1000000840/1000000840_main_033.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="76" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="76" data-auth="y" data-notice="n">강력 추천합니다.</a> <a
-										class="reviewContent">미니멀 캠핑이나 간편하게 야외활동시 크기나 용량면에서
-											딱입니다타...</a> <a class="rating_star"> <span
-											style="width: 100%;">별 다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">김신*</span> <span class="board_day">2022.08.01</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000840"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/07/29/1000000840/1000000840_main_033.jpg"
-													width="38px" height="38px" title=""> 스탠리 아이스플로우 차박용
-													진공 저그 1.9리터</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/06/26/1000000811/1000000811_main_010.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="75" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="75" data-auth="y" data-notice="n">가볍습니다</a> <a
-										class="reviewContent">실타프용으로 구입했어요일단 정말 가볍네요내구성은 사용해 봐야
-											할...</a> <a class="rating_star"> <span style="width: 60%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">김재*</span> <span class="board_day">2022.03.26</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000811"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/06/26/1000000811/1000000811_main_010.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 피노키오 에어</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/07/1000000114/1000000114_main_05.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="74" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="74" data-auth="y" data-notice="n">기다리던 박스!</a> <a
-										class="reviewContent">원버너가 올라가는 상판과 함께 드디어 구매했어요 오랜 기다림
-											끝...</a> <a class="rating_star"> <span style="width: 100%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">김재*</span> <span class="board_day">2021.11.29</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000114"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/07/1000000114/1000000114_main_05.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 알루미늄 컨테이너
-													U50</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/03/09/1000000517/1000000517_main_016.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="73" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="73" data-auth="y" data-notice="n">배송 정말 빠릅니다</a> <a
-										class="reviewContent">배송 정말 빠르구요^^항상 캠핑용품은 엔보트에서
-											구매합니다마이티...</a> <a class="rating_star"> <span
-											style="width: 100%;">별 다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">백지*</span> <span class="board_day">2021.10.28</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000517"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/03/09/1000000517/1000000517_main_016.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 마이티 랜턴</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/01/04/1000000501/1000000501_main_094.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="72" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="72" data-auth="y" data-notice="n">배송빨라요</a> <a
-										class="reviewContent">배송 빨라서 좋아요 가스는 원래 안넣어서 보내는게 맞으시죠???</a>
-										<a class="rating_star"> <span style="width: 100%;">별
-												다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">신진*</span> <span class="board_day">2021.10.16</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000501"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/21/01/04/1000000501/1000000501_main_094.jpg"
-													width="38px" height="38px" title=""> 소토 ST-486한정판(
-													마이크로 토치 )</span>
-											</a>
-										</div></li>
-								</ul>
-								<ul class="reviewWrap item w15"
-									style="position: absolute; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
-									<li class="reviewImage reviewBtnViewPop"
-										style="background: url('https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/06/1000000051/1000000051_main_078.jpg') no-repeat; background-size: cover; background-position: 50% 50%;"
-										data-bdid="goodsreview" data-sno="71" data-auth="y"
-										data-notice="n"></li>
-									<li class="reviewInfo"><a
-										class="reviewSubject reviewBtnViewPop" data-bdid="goodsreview"
-										data-sno="71" data-auth="y" data-notice="n">캠핑용품을 거의 미니멀웍스
-											제품으로 교체중입니...</a> <a class="reviewContent">비슷한 제품이 있는데 추가로
-											구입합니다.미니멀웍스라서요</a> <a class="rating_star"> <span
-											style="width: 100%;">별 다섯개중 다섯개</span>
-									</a>
-										<div class="board_name_day">
-											<span class="board_name">박창*</span> <span class="board_day">2021.10.15</span>
-										</div>
-										<div class="prdGoods">
-											<a href="../goods/goods_view.php?goodsNo=1000000051"> <span><img
-													src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/goods/20/02/06/1000000051/1000000051_main_078.jpg"
-													width="38px" height="38px" title=""> 미니멀웍스 파티오 매트</span>
-											</a>
-										</div></li>
-								</ul>
-							</div>
-							<div id="reviewDetailLayer" class="dn">
-								<div class="detailLayerClose"></div>
-								<div class="js_detail"></div>
-							</div>
-							<div id="reviewLayerDim" class="dn">&nbsp;</div>
-							<div id="lyPassword"
-								class="layer_wrap password_layer js_password_layer dn"
-								style="height: 223px">
-								<div class="layer_wrap_cont">
-									<div class="ly_tit">
-										<h4>비밀번호 인증</h4>
-									</div>
-									<div class="ly_cont">
-										<div class="scroll_box">
-											<p>글 작성시 설정한 비밀번호를 입력해 주세요.</p>
-											<input type="password" name="writerPw" class="text"
-												autocomplete="off">
-										</div>
-										<!-- // -->
-										<div class="btn_center_box">
-											<button type="button" class="btn_ly_password js_submit">
-												<strong>확인</strong>
-											</button>
-										</div>
-									</div>
-									<!-- //ly_cont -->
-									<a href="#close" class="ly_close review_layer_close"><img
-										src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/common/layer/btn_layer_close.png"
-										alt="닫기" title=""></a>
-								</div>
-								<!-- //layer_wrap_cont -->
-							</div>
-							<!-- //password_layer -->
-							<div id="lyPassword"
-								class="layer_wrap password_layer js_password_layer2 dn"
-								style="height: 223px">
-								<div class="layer_wrap_cont">
-									<div class="ly_tit">
-										<h4>비밀번호 인증</h4>
-									</div>
-									<div class="ly_cont">
-										<div class="scroll_box">
-											<p>글 작성시 설정한 비밀번호를 입력해 주세요.</p>
-											<input type="password" name="writerPw" class="text"
-												autocomplete="off">
-										</div>
-										<!-- // -->
-										<div class="btn_center_box">
-											<button type="button" class="btn_ly_password js_submit">
-												<strong>확인</strong>
-											</button>
-										</div>
-									</div>
-									<!-- //ly_cont -->
-									<a href="#close" class="ly_close review_layer_close"><img
-										src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/common/layer/btn_layer_close.png"
-										alt="닫기" title=""></a>
-								</div>
-								<!-- //layer_wrap_cont -->
-							</div>
-							<!-- //password_layer -->
-
-							<link type="text/css" rel="stylesheet"
-								href="/data/skin/front/mplshop/_mplshop/css/reviewLayer.css">
-							<script type="text/javascript"
-								src="/data/skin/front/mplshop/_mplshop/js/reviewLayer.js"></script>
-
-						</div>
-					</div>
-				</div>
 
 				<!--
 	※※ 인스타그램 진열 영역 ※※

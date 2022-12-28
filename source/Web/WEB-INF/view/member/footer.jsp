@@ -1,24 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/member_a.css" />
-    <link rel="stylesheet" href="./css/member_b.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/join.css" />
-
-    <script src="./js/jquery-3.6.1.js"></script>
-    <script src="./js/header.js"></script>
-    
-<title>footer</title>
-</head>
-<body>
-   <div id="footer_wrap">
+<div id="footer_wrap">
       <div id="footer">
         <div class="inner">
           <div class="footerContentWrap">
@@ -279,6 +261,3 @@
       </form>
       <!-- //footer -->
     </div>
- 
-</body>
-</html>
