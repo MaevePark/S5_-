@@ -1,5 +1,7 @@
 package kh.s5.nvot.product.model;
 
+import java.util.List;
+
 public class ProductVo {
 //	PRODUCT_ID     NOT NULL NUMBER        
 //	PRODUCT_NAME   NOT NULL VARCHAR2(300) 
@@ -10,6 +12,8 @@ public class ProductVo {
 	private String product_name;
 	private int product_price;
 	private String product_detail;
+	private List<ProductImageVo> product_image_list;
+	
 	public ProductVo(int product_id, String product_name, int product_price, String product_detail) {
 		super();
 		this.product_id = product_id;
@@ -17,10 +21,14 @@ public class ProductVo {
 		this.product_price = product_price;
 		this.product_detail = product_detail;
 	}
+	public ProductVo() {}
+	
+
 	@Override
 	public String toString() {
 		return "ProductVo [product_id=" + product_id + ", product_name=" + product_name + ", product_price="
-				+ product_price + ", product_detail=" + product_detail + "]";
+				+ product_price + ", product_detail=" + product_detail + ", product_image_list=" + product_image_list
+				+ "]";
 	}
 	public int getProduct_id() {
 		return product_id;
@@ -46,4 +54,11 @@ public class ProductVo {
 	public void setProduct_detail(String product_detail) {
 		this.product_detail = product_detail;
 	}
+	public List<ProductImageVo> getProduct_image_list() {
+		return product_image_list;
+	}
+	public void setProduct_image_list(List<ProductImageVo> product_image_list) {
+		this.product_image_list = product_image_list;
+	}
+	
 }
