@@ -4,27 +4,31 @@ public class ProductImageVo {
 //	PRODUCT_IMAGE_CODE NOT NULL VARCHAR2(500) 
 //	PRODUCT_CODE       NOT NULL NUMBER 
 	
-	private String PRODUCT_IMAGE_CODE;
-	private int PRODUCT_CODE;
-	public ProductImageVo(String pRODUCT_IMAGE_CODE, int pRODUCT_CODE) {
+	private String product_image_code;
+	private int product_code;
+	public ProductImageVo(String product_image_code, int product_code) {
 		super();
-		PRODUCT_IMAGE_CODE = pRODUCT_IMAGE_CODE;
-		PRODUCT_CODE = pRODUCT_CODE;
+		this.product_image_code = product_image_code;
+		this.product_code = product_code;
+	}
+	public ProductImageVo() {
+		super();
 	}
 	@Override
 	public String toString() {
-		return "ProductImageVo [PRODUCT_IMAGE_CODE=" + PRODUCT_IMAGE_CODE + ", PRODUCT_CODE=" + PRODUCT_CODE + "]";
+		return "ProductImageVo [product_image_code=" + product_image_code + ", product_code=" + product_code + "]";
 	}
-	public String getPRODUCT_IMAGE_CODE() {
-		return PRODUCT_IMAGE_CODE;
+	public String getProduct_image_code() {
+		return product_image_code;
 	}
-	public void setPRODUCT_IMAGE_CODE(String pRODUCT_IMAGE_CODE) {
-		PRODUCT_IMAGE_CODE = pRODUCT_IMAGE_CODE;
+	public void setProduct_image_code(String product_image_code) {
+		this.product_image_code = product_image_code;
 	}
-	public int getPRODUCT_CODE() {
-		return PRODUCT_CODE;
+	public int getProduct_code() {
+		return product_code;
 	}
-	public void setPRODUCT_CODE(int pRODUCT_CODE) {
-		PRODUCT_CODE = pRODUCT_CODE;
-	}	
+	public void setProduct_code(int product_code) {
+		this.product_code = product_code;
+	}
+		
 }
