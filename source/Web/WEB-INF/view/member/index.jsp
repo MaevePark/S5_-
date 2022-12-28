@@ -25,14 +25,11 @@
 <title>메인페이지</title>
 
 <style>
-/*메인 슬라이드 영역  높이값은 675px 로 측정되어 있습니다. */
 .mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
 	.mainTopSildeWrap .mainTopSilde .slick-slide {
 	height: 675px;
 	overflow: hidden;
 }
-
-/*화면 해상도(가로 넓이) 변경에 따른 높이값 변경 */
 @media screen and (max-width:1240px) {
 	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
 		.mainTopSildeWrap .mainTopSilde .slick-slide {
@@ -61,7 +58,6 @@
 	}
 }
 </style>
-
 </head>
 <body>
 	<%@include file="/WEB-INF/view/member/header.jsp"%>
