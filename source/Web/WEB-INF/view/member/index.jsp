@@ -7,21 +7,16 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/reset.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/common.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/member_a.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/member_b.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/layout.css" />
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/css/index.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/reset.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/common.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_a.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_b.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/layout.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/index.css" />
 
 <script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
 <script src="<%=request.getContextPath()%>/js/header.js"></script>
+
 <title>메인페이지</title>
 
 <style>

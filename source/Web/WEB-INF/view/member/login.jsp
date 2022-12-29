@@ -1,31 +1,66 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/reset.css" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/common.css" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/member_a.css" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/member_b.css" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/layout.css" />
-    <link rel="stylesheet" href="<%=request.getContextPath() %>/css/login.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/reset.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/common.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_a.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_b.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/layout.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/login.css" />
 
-    <script src="./js/jquery-3.6.1.js"></script>
-    <script src="./js/header.js"></script>
-<title>login</title>
+<script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
+<script src="<%=request.getContextPath()%>/js/header.js"></script>
+<script src="<%=request.getContextPath()%>/js/login.js"></script>
+
+<title>로그인</title>
+
+<style>
+.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
+	.mainTopSildeWrap .mainTopSilde .slick-slide {
+	height: 675px;
+	overflow: hidden;
+}
+@media screen and (max-width:1240px) {
+	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
+		.mainTopSildeWrap .mainTopSilde .slick-slide {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width:1140px) {
+	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
+		.mainTopSildeWrap .mainTopSilde .slick-slide {
+		height: 540px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
+		.mainTopSildeWrap .mainTopSilde .slick-slide {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
+		.mainTopSildeWrap .mainTopSilde .slick-slide {
+		height: 420px;
+	}
+}
+</style>
 </head>
 <body>
-    <div id="container" class="subPageContainer">
+  <%@include file="/WEB-INF/view/member/header.jsp"%>
+  <div id="container" class="subPageContainer">
       <div id="contents">
         <!-- 본문 시작 -->
-
-        <!-- //location_wrap -->
-
         <div class="sub_content">
-          <!-- //side_cont -->
           <div class="content_box">
             <div class="member_wrap">
               <div class="member_tit">
@@ -33,12 +68,7 @@
               </div>
               <!-- //member_tit -->
               <div class="member_cont">
-                <form
-                  id="formLogin"
-                  method="post"
-                  action="http://nvot.co.kr/member/login_ps.php"
-                  novalidate="novalidate"
-                >
+                <form id="formLogin" action="<%=request.getContextPath()%>/login.do" method="post">
                   <input type="hidden" id="mode" name="mode" value="login" />
                   <input
                     type="hidden"
@@ -54,7 +84,7 @@
                           type="text"
                           id="loginId"
                           name="loginId"
-                          value="qkralswl07"
+                          value=""
                           placeholder="아이디"
                           required="true"
                           aria-required="true"
@@ -111,7 +141,6 @@
                   </div>
                   <!-- //btn_login_box -->
                 </form>
-
                 <!-- //nonmember_join_box -->
              </div>
               <!-- //member_cont -->
@@ -119,116 +148,11 @@
             <!-- //member_wrap -->
           </div>
           <!-- //content_box -->
-
-          <script
-            type="text/javascript"
-            src="/data/skin/front/mplshop/js/jquery/jquery.serialize.object.js"
-          ></script>
-          <script type="text/javascript">
-            var $formLogin;
-            $(document).ready(function () {
-              var order_no_max_length = $("input[name=orderNo]").data(
-                "max-length"
-              );
-              $("#btnJoinMember").click(function (e) {
-                e.preventDefault();
-                location.href = "../member/join_method.php";
-              });
-              $("#btnFindId").click(function (e) {
-                e.preventDefault();
-                location.href = "../member/find_id.php";
-              });
-              $("#btnFindPwd").click(function (e) {
-                e.preventDefault();
-                location.href = "../member/find_password.php";
-              });
-
-              $("#loginId, #loginPwd").focusin(function () {
-                $(".js_caution_msg1", "#formLogin").addClass("dn");
-              });
-
-              $formLogin = $("#formLogin");
-              $formLogin.validate({
-                dialog: false,
-                rules: {
-                  loginId: {
-                    required: true,
-                  },
-                  loginPwd: {
-                    required: true,
-                  },
-                },
-                messages: {
-                  loginId: {
-                    required: "아이디를 입력해주세요",
-                  },
-                  loginPwd: {
-                    required: "패스워드를 입력해주세요",
-                  },
-                },
-                submitHandler: function (form) {
-                  if (window.location.search) {
-                    var _tempUrl = window.location.search.substring(1);
-                    var _tempVal = _tempUrl.split("=");
-
-                    if (_tempVal[1] == "lnCouponDown") {
-                      $("#returnUrl").val(document.referrer);
-                    }
-                  }
-                  form.target = "ifrmProcess";
-                  form.submit();
-                },
-              });
-
-              // 비회원 주문조회 폼 체크
-              $("#formOrderLogin").validate({
-                rules: {
-                  orderNm: "required",
-                  orderNo: {
-                    required: true,
-                    number: true,
-                    maxlength: order_no_max_length,
-                  },
-                },
-                messages: {
-                  orderNm: {
-                    required: "주문자명을 입력해주세요.",
-                  },
-                  orderNo: {
-                    required: "주문번호를 입력해주세요.",
-                    number: "숫자로만 입력해주세요.",
-                    maxlength:
-                      "주문번호는 " + order_no_max_length + "자리입니다.",
-                  },
-                },
-                submitHandler: function (form) {
-                  $.post(form.action, $(form).serializeObject()).done(function (
-                    data,
-                    textStatus,
-                    jqXhr
-                  ) {
-                    console.log(data);
-                    if (data.result == 0) {
-                      location.replace(
-                        "../mypage/order_view.php?orderNo=" + data.orderNo
-                      );
-                    } else {
-                      $(".js_caution_msg2")
-                        .empty()
-                        .html(
-                          "주문자명과 주문번호가 일치하는 주문이 존재하지 않습니다. 다시 입력해 주세요.<br><span>주문번호와 비밀번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.</span>"
-                        );
-                    }
-                  });
-                  return false;
-                },
-              });
-            });
-          </script>
         </div>
         <!-- //sub_content -->
       </div>
       <!-- //본문 끝 contents -->
     </div>
+  <%@include file="/WEB-INF/view/member/footer.jsp"%>
 </body>
 </html>
