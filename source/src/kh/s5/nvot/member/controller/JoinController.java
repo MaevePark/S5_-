@@ -1,4 +1,4 @@
-package kh.s5.nvot.join.controller;
+package kh.s5.nvot.member.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class JoinController
  */
-@WebServlet("/JoinController")
+@WebServlet("/Join")
 public class JoinController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -19,7 +19,6 @@ public class JoinController extends HttpServlet {
      */
     public JoinController() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
