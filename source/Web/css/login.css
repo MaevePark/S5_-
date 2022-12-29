@@ -1,0 +1,72 @@
+.member_tit, .join_base_wrap .member_tit, .join_agreement_wrap .member_tit {
+    padding: 20px 5px 0;
+}
+.member_tit, .join_base_wrap .member_tit, .join_agreement_wrap .member_tit {
+    padding: 20px 0 0 0;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+}
+.member_cont {
+    border: 1px solid #eaeaea;
+}
+.member_cont {
+    padding: 70px 60px;
+}
+.member_cont .member_login_box .login_input_sec > div {
+    float: left;
+    width: 75%;
+}
+.member_cont .member_login_box .login_input_sec input {
+    width: 94%;
+    border: 1px solid #eaeaea;
+}
+.member_cont .member_login_box .login_input_sec button {
+    width: 25%;
+    border: 1px solid #383838;
+    background: #383838;
+}
+.member_cont .member_login_box .id_chk {
+    padding: 0 0 15px 0;
+}
+.member_cont .btn_login_box {
+    text-align: center;
+    font-size: 0;
+}
+.btn_member_join {
+    font-size: 13px;
+    background: #383838;
+}
+.btn_member_join {
+    width: 150px;
+    height: 45px;
+    margin: 0;
+    color: #ffffff;
+    border: 1px solid #666666;
+    cursor: pointer;
+    font-weight: bold;
+}
+.member_cont .btn_login_box li {
+    float: none;
+    display: inline-block;
+    margin: 0 2px;
+}
+.btn_member_white {
+    width: 150px;
+    height: 45px;
+    color: #3e3d3c;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    cursor: pointer;
+}
+.member_cont .nonmember_order_box .order_input_sec input {
+    width: 94%;
+    border: 1px solid #eaeaea;
+}
+.member_cont .nonmember_order_box .order_input_sec button {
+    width: 25%;
+    border: 1px solid #383838;
+    color: #383838;
+}
