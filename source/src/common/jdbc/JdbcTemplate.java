@@ -26,8 +26,6 @@ public class JdbcTemplate {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-//		C:\z_workspace\java\my_web_5_board\build\classes\common\jdbc
-//		C:\z_workspace\java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\my_web_5_board\WEB-INF\classes\common\jdbc
 		return conn;
 	}
 	public static void commit(Connection conn) {
