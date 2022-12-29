@@ -18,8 +18,8 @@ public class MemberDao {
 		int result = 0;
 		
 		String sql = "insert into member (member_id, member_pwd, member_name, member_email, member_cellphone, member_tel, member_address_post, "
-				+ "member_address_1, member_address_2, member_birthday, member_email_agree,member_sms_agree)" 
-				+ "values(?,?,?,?,?,?,?,?,?,?,?,?)";
+				+ "member_address_1, member_address_2)" 
+				+ "values(?,?,?,?,?,?,?,?,?)";
 		PreparedStatement pstmt = null;
 		
 		try {
@@ -33,9 +33,6 @@ public class MemberDao {
 			pstmt.setString(7, vo.getMember_address_post());
 			pstmt.setString(8, vo.getMember_address_1());
 			pstmt.setString(9, vo.getMember_address_2());
-			pstmt.setDate(10, vo.getMember_birthday());
-			pstmt.setInt(11, vo.getMember_email_agree());
-			pstmt.setInt(12, vo.getMember_sms_agree());
 			
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
@@ -112,9 +109,6 @@ public class MemberDao {
 					vo.setMember_address_post(rs.getString("member_address_post"));
 					vo.setMember_address_1(rs.getString("member_address_1"));
 					vo.setMember_address_2(rs.getString("member_address_2"));
-					vo.setMember_birthday(rs.getDate("member_birthday"));
-					vo.setMember_email_agree(rs.getInt("setMember_email_agree"));
-					vo.setMember_sms_agree(rs.getInt("setMember_sms_agree"));
 					
 					volist.add(vo);
 				} while(rs.next());
@@ -152,9 +146,6 @@ public class MemberDao {
 				vo.setMember_address_post(rs.getString("member_address_post"));
 				vo.setMember_address_1(rs.getString("member_address_1"));
 				vo.setMember_address_2(rs.getString("member_address_2"));
-				vo.setMember_birthday(rs.getDate("member_birthday"));
-				vo.setMember_email_agree(rs.getInt("mconsent"));
-				vo.setMember_sms_agree(rs.getInt("mconsent"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
