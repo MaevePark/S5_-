@@ -9,23 +9,17 @@ import java.util.List;
 
 import common.jdbc.JdbcTemplate;
 
-
 // Member
 public class MemberDao {
-//	insert
-//	update
-//	delete
-//	selectList
-//	selectOne
-//  최소 5개 
-	
+
 //	insert - 등록
 	public int insert(Connection conn, MemberVo vo) {
 		System.out.println(">>>> MemberDao insert param : " + vo);
 		int result = 0;
 		
 		String sql = "insert into member (member_id, member_pwd, member_name, member_email, member_cellphone, member_tel, member_address_post, "
-				+ "member_address_1, member_address_2, member_birthday, member_email_agree,member_sms_agree)";
+				+ "member_address_1, member_address_2, member_birthday, member_email_agree,member_sms_agree)" 
+				+ "values(?,?,?,?,?,?,?,?,?,?,?,?)";
 		PreparedStatement pstmt = null;
 		
 		try {
@@ -38,10 +32,10 @@ public class MemberDao {
 			pstmt.setString(6, vo.getMember_tel());
 			pstmt.setString(7, vo.getMember_address_post());
 			pstmt.setString(8, vo.getMember_address_1());
-			pstmt.setString(8, vo.getMember_address_2());
-			pstmt.setDate(9, vo.getMember_birthday());
-			pstmt.setInt(10, vo.getMember_email_agree());
-			pstmt.setInt(11, vo.getMember_sms_agree());
+			pstmt.setString(9, vo.getMember_address_2());
+			pstmt.setDate(10, vo.getMember_birthday());
+			pstmt.setInt(11, vo.getMember_email_agree());
+			pstmt.setInt(12, vo.getMember_sms_agree());
 			
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
@@ -59,7 +53,7 @@ public class MemberDao {
 		System.out.println(">>>> MemberDao update param member_id : " + member_id);
 		int result = 0;
 		
-		String sql = "update member set MEMBER_PWD=? where MEMBER_ID=?";
+		String sql = "update member set member_pwd=? where member_id=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
@@ -119,8 +113,8 @@ public class MemberDao {
 					vo.setMember_address_1(rs.getString("member_address_1"));
 					vo.setMember_address_2(rs.getString("member_address_2"));
 					vo.setMember_birthday(rs.getDate("member_birthday"));
-					vo.setMember_email_agree(rs.getInt("mconsent"));
-					vo.setMember_sms_agree(rs.getInt("mconsent"));
+					vo.setMember_email_agree(rs.getInt("setMember_email_agree"));
+					vo.setMember_sms_agree(rs.getInt("setMember_sms_agree"));
 					
 					volist.add(vo);
 				} while(rs.next());
@@ -172,8 +166,10 @@ public class MemberDao {
 		return vo;
 	}
 	
-//	selectOne - login - 상세조회
+//	selectOne - login 로그인
 	public MemberVo login(Connection conn, String member_id, String member_pwd){
+		System.out.println(">>>> MemberDao login param member_id : " + member_id);
+		System.out.println(">>>> MemberDao login param member_pwd : " + member_pwd);
 		MemberVo vo = null;
 		
 		String sql = "select member_id,member_name from member where member_id=? and member_pwd=?";
@@ -186,18 +182,17 @@ public class MemberDao {
 			pstmt.setString(2, member_pwd);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				//PK로 where했으므로 단일행 결과물로 while문 작성하지 않음
 				vo = new MemberVo();
 				vo.setMember_id(rs.getString("member_id"));
-				vo.setMember_pwd(rs.getString("member_pwd"));
-
+				vo.setMember_name(rs.getString("member_name"));
 			}
-		}catch (Exception e) {
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}finally {
 			JdbcTemplate.close(rs);
 			JdbcTemplate.close(pstmt);
 		}
+		System.out.println(">>>> MemberDao login return : " + vo);
 		return vo;
 	}
 }
