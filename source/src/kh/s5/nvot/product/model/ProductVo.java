@@ -27,7 +27,7 @@ public class ProductVo {
 	@Override
 	public String toString() {
 		return "ProductVo [product_id=" + product_id + ", product_name=" + product_name + ", product_price="
-				+ product_price + ", product_detail=" + product_detail + ", product_image_list=" + product_image_list
+				+ product_price + ", product_detail=[길어서제외]"+ ", product_image_list=" + product_image_list
 				+ "]";
 	}
 	public int getProduct_id() {
