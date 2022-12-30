@@ -2,11 +2,28 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>S5_NVoT</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>/WEB-INF/view/index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- controller 를 줄여줄 방법 중 1가지 -->
+  <!-- servlet 태그는 servlet 역할을 해줌 1/4 수업예정 -->
+  
+  <servlet>
+  	<servlet-name>aaa</servlet-name>
+  	<servlet-class>kh.s5.nvot.member.controller.LoginController</servlet-class>
+  </servlet>
+  
+ <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+		<url-pattern>*.css</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.ico</url-pattern>
+		<url-pattern>*.swf</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.avif</url-pattern>
+		<url-pattern>*.svg</url-pattern>
+		<url-pattern>*.webp</url-pattern>
+	</servlet-mapping>
 </web-app>
