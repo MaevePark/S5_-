@@ -1,0 +1,87 @@
+.board_write_table {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+}
+.board_write_table th {
+    padding: 13px 0 7px 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fbfbfb;
+    text-align: left;
+    vertical-align: top;
+}
+.board_write_table td {
+    height: 32px;
+    margin: 0;
+    padding: 7px 0 7px 15px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #ffffff;
+}
+.board_write_table td > input {
+    width: 312px;
+}
+
+/* 이전 / 확인 버튼 */
+.board_zone_sec .btn_center_box {
+    margin: 30px 0 0 0;
+}
+.btn_before {
+    display: inline-block;
+    width: 100px;
+    height: 42px;
+    padding: 0 5px 0 5px;
+    color: #3e3d3c;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_before:hover{border:1px solid #bbbbbb; color:#333333;}
+.btn_center_box button + button {
+    margin-left: 6px;
+}
+.btn_write_ok {
+    min-width: 100px;
+    border: 1px solid #383838;
+    background: #383838;
+}
+.btn_write_ok {
+    display: inline-block;
+    height: 42px;
+    padding: 0 10px 0 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_write_ok:hover{
+    border:1px solid #383838; 
+    background:#ffffff; 
+    color:#333333;
+}
+/* 본문 글 입력 칸 */
+#editor {
+    resize: none;
+}
+
+/* 파일첨부 */
+.btn_gray_list .btn_gray_big {
+    height: 31px;
+    background-position: 0 -140px;
+}
+.btn_gray_list .btn_gray_big span {
+    line-height: 31px;
+}
+.btn_gray_list a span, .btn_gray_list button span {
+    padding: 0px 10px 0 0;
+}
+
+.btn_gray_list a, .btn_gray_list button {
+    display: inline-block;
+    padding: 0 0 0 8px;
+    border: 1px solid #dbdbdb;
+}
