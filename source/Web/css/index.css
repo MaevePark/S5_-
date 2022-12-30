@@ -1,3 +1,10 @@
+.member_tit h2, .join_base_wrap .member_tit h2, .join_agreement_wrap .member_tit h2 {
+    padding: 0 0 8px 0;
+    display: inline-block;
+    color: #333;
+    border-bottom: 3px solid #333;
+    font-size: 22px;
+}
 .mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages, .mainTopSildeWrap .mainTopSilde .slick-slide {
     height: 675px;
     overflow: hidden;
