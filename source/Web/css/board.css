@@ -60,6 +60,9 @@ table {
     text-align: center;
     vertical-align: middle;
 }
-.btn_write:hover{
-    border:1px solid #626262; 
-    background:#626262;}
+.btn_write:hover {
+    border:1px solid #383838; 
+    background:#ffffff; 
+    color:#333333;
+}
+
