@@ -1,0 +1,65 @@
+.board_zone_sec {
+    position: relative;
+}
+.board_zone_tit {
+    padding: 20px 5px 0;
+}
+.board_zone_tit {
+    padding: 20px 0 0 0;
+    margin: 0 0 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+}
+.board_zone_tit h2 {
+    padding: 0 0 8px 0;
+    display: inline-block;
+    color: #333;
+    border-bottom: 3px solid #333;
+}
+.board_list_table {
+    border-top: 2px solid #000;
+    margin: 0;
+}
+.board_list_table {
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+.board_list_table th {
+    padding: 10px 10px 10px 14px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.board_list_table {
+    border-top: 2px solid #000;
+    margin: 0;
+}
+
+/* 1:1문의하기 버튼 */
+.btn_write {
+    top: 20px;
+    border: 1px solid #383838;
+    background: #383838;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    min-width: 90px;
+    height: 31px;
+    margin: 0 0 0 5px;
+    padding: 0 10px 0 10px;
+    line-height: 29px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+.btn_write:hover{
+    border:1px solid #626262; 
+    background:#626262;}
