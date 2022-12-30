@@ -29,9 +29,10 @@ public class LoginDoController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String member_id = request.getParameter("member_id");
-		String member_pwd = request.getParameter("member_pwd");
-		
+		String member_id = request.getParameter("loginId"); //login.jsp 85번 
+		String member_pwd = request.getParameter("loginPwd");
+		System.out.println(">> LoginDoCtrl login param member_id :" + member_id);
+		System.out.println(">> LoginDoCtrl login param member_pwd :" + member_pwd);
 		MemberService service = new MemberService();
 		MemberVo loginInfo = service.login(member_id, member_pwd);
 		
