@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div id="header_warp">
 	<div class="topBanner">
 		<div class="topBannerDirectionNav" style="display: none">
@@ -48,45 +49,44 @@
 							href="https://www.instagram.com/nvot_incheon/" target="_blank"><img
 							src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_04.png"
 							alt="인스타그램" title="" /></a>
-						<!-- <a href="#none"><img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_05.png" alt="페이스북"></a> -->
-						<!-- <a href="#none"><img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_06.png" alt="블로그"></a>
-                          <!-- <a href="#none"><img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_07.png" alt="카카오스토리"></a> -->
 						<a
 							href="https://www.youtube.com/channel/UCChcXRAWtm_PRAGc0TfKeXA?view_as=subscriber"
 							target="_blank"><img
 							src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_08.png"
 							alt="유튜브" title="" /></a>
-						<!-- <a href="#none"><img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_09.png" alt="카카오톡"></a> -->
 					</div>
+					
+					
+					
 					<!-- 상단 로그인 영역 수정부분 -->
 					<div class="headerMember">
 						<ul>
-							<li><a href="../member/login.php">로그인
-									<div class="lineBg"
-										style="display: block; left: 100%; transition: all 200ms ease 0s;"></div>
-							</a></li>
-							<li><a href="/NVoT_join.html">회원가입
-									<div class="lineBg"
-										style="display: block; left: 100%; transition: all 200ms ease 0s;"></div>
-							</a></li>
-							<li class="displayLI"><a href="../order/cart.php">장바구니 <span
+					<c:choose>
+						<c:when test="${empty loginSsInfo}">
+						<li><a href="${pageContext.request.contextPath}/login">로그인</a></li>
+						<li><a href="${pageContext.request.contextPath}/join">회원가입</a></li>
+						</c:when>
+						<c:otherwise>
+						${loginSsInfo.mname}
+						<li><a href="${pageContext.request.contextPath}/logout">로그아웃</a></li>
+						</c:otherwise>
+					</c:choose>
+					
+					
+					
+							<li class="displayLI"><a href="/">장바구니 <span
 									id="cartCnt"><strong>0</strong></span>
-									<div class="lineBg"
-										style="display: block; left: -100%; transition: all 200ms ease 0s;"></div>
 							</a></li>
-							<li><a href="../mypage/order_list.php">주문조회
-									<div class="lineBg"></div>
+							<li><a href="/">주문조회
 							</a></li>
-							<li><a href="../mypage/index.php">마이페이지
+							<li><a href="/">마이페이지
 									<div class="lineBg"></div>
 							</a></li>
 							<li class="displayLI"><a href="#none"
 								onclick="javascript:addfavorites('nvot.co.kr','캠퍼들의 방앗간, 엔보트');">즐겨찾기
 									<div class="lineBg"></div>
 							</a></li>
-							<li class="headerCs"><a href="../service/index.php">커뮤니티
-									<div class="lineBg"
-										style="display: block; left: -100%; transition: all 200ms ease 0s;"></div>
+							<li class="headerCs"><a href="${pageContext.request.contextPath}/board">커뮤니티
 							</a>
 								<div class="headerCsBoard">
 									<ul>
@@ -97,9 +97,10 @@
 										</li>
 										<li><a href="../board/list.php?bdId=lookbook">룩북</a></li>
 										<li><a href="../service/faq.php">자주하는질문</a></li>
-										<li><a href="../board/list.php?bdId=qa">1:1문의하기</a></li>
+										<li><a href="${pageContext.request.contextPath}/boardWrite">1:1문의하기</a></li>
 									</ul>
-								</div></li>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -129,12 +130,12 @@
 				</div>
 				<div class="headerLogo">
 					<div class="m_out">
-						<a href="../main/index.php"><img
+						<a href="${pageContext.request.contextPath}/main"><img
 							src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/banner/76d9b45d23c48401f8a914cc9b035dbf_66272.png"
 							alt="logo" title="" /></a>
 					</div>
 					<div class="m_over">
-						<a href="../main/index.php"><img
+						<a href="${pageContext.request.contextPath}/main"><img
 							src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/banner/149467a986169e7238fbd5d39ab48cca_46154.png"
 							alt="logo" title="" /></a>
 					</div>
