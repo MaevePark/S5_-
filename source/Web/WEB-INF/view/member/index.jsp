@@ -121,7 +121,7 @@
 												<p class="mpl_best">BEST 1</p>
 												<div class="item_photo_box">
 													<a
-														href="../goods/goods_view.php?goodsNo=1000001119&amp;mtn=7%5E%7C%5EMD+PICK%5E%7C%5En">
+														href="${pageContext.request.contextPath}/product">
 														<img
 														src="${product.product_image_list[0].product_image_code }"
 														width="400" alt="골제로 라이트 하우스 마이크로 플래쉬 랜턴" title=""
