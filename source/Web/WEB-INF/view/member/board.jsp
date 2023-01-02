@@ -178,7 +178,10 @@
                             <!-- //board_zone_list -->
                             
                             <div class="btn_right_box">
-                                <button type="button" class="btn_write" onclick="gd_btn_write('qa')"><strong>1:1 문의하기</strong></button>
+                            	<a  href="${pageContext.request.contextPath }/boardWrite">
+                            		<button type="button" class="btn_write"><strong>1:1 문의하기</strong></button>
+                            	</a>
+                                
                             </div>
                         </div>
                         <!-- //board_zone_cont -->  
