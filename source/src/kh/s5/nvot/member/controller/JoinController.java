@@ -24,8 +24,7 @@ public class JoinController extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 		String viewPath = "WEB-INF/view/member/join.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 	}
