@@ -16,6 +16,7 @@
 
 <script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
 <script src="<%=request.getContextPath()%>/js/header.js"></script>
+<script src="<%=request.getContextPath()%>/js/join.js"></script>
 
 <title>회원가입</title>
 
@@ -44,7 +45,7 @@
 						<!-- //member_tit -->
 						<div class="member_cont">
 							<form id="formJoin" name="formJoin"
-								action="http://nvot.co.kr/member/member_ps.php" method="post"
+								action="<%=request.getContextPath()%>/join.do" method="post"
 								novalidate="novalidate">
 								<input type="hidden" name="rncheck" value="none" /> <input
 									type="hidden" name="dupeinfo" value="" /> <input type="hidden"
@@ -152,19 +153,15 @@
 												</tr>
 												<tr>
 													<th><span class="important">주소</span></th>
-													<td class="member_address">
+													<td class="member_address">			
 														<div class="address_postcode">
-															<input type="text" name="zonecode" readonly="readonly"
-																value="" />
-															<button type="button" id="btnPostcode"
-																class="btn_post_search">
-																우편번호검색</button>
-															<input type="hidden" name="zipcode" value="" />
-														</div>
-														<div class="address_input">
+																<input type="text" name="zonecode" value="" />
+																	<button type="button" id="btnPostcode" class="btn_post_search">우편번호검색</button>
+																	<input type="hidden" name="zipcode" value="" />
+															</div>													
+														<div class="address_input">															
 															<div class="member_warning">
-																<input type="text" name="address" readonly="readonly"
-																	value="" />
+																<input type="text" name="address" value="" />
 															</div>
 															<div class="member_warning js_address_sub">
 																<input type="text" name="addressSub" value="" />
@@ -185,9 +182,9 @@
 								<!-- 회원가입/정보 부가정보 -->
 	
 								<div class="btn_center_box">
-									<button type="button" id="btnCancel" class="btn_member_cancel">
+									<button type="submit" id="btnCancel" class="btn_member_cancel">
 										취소</button>
-									<button type="button" class="btn_comfirm js_btn_join"
+									<button type="submit" class="btn_comfirm js_btn_join"
 										value="회원가입">회원가입</button>
 								</div>
 								<!-- //btn_center_box -->
@@ -198,147 +195,6 @@
 					<!-- //join_base_wrap -->
 				</div>
 				<!-- //content_box -->
-				<script type="text/javascript">
-					var paycoProfile = [];
-					var naverProfile = [];
-					var thirdPartyProfile = Array;
-					var kakaoProfile = [];
-	
-					$(document)
-							.ready(
-									function() {
-										var $formJoin = $("#formJoin");
-	
-										$(":text:first", $formJoin).focus();
-	
-										$("#btnCancel", $formJoin).click(
-												function(e) {
-													e.preventDefault();
-													top.location.href = "/";
-												});
-	
-										if ($(".js_datepicker").length) {
-											$(".js_datepicker").datetimepicker({
-												locale : "ko",
-												format : "YYYY-MM-DD",
-												dayViewHeaderFormat : "YYYY MM",
-												viewMode : "days",
-												ignoreReadonly : true,
-												debug : false,
-												keepOpen : false,
-											});
-										}
-	
-										$("#btnPostcode")
-												.click(
-														function(e) {
-															e.preventDefault();
-															$(
-																	"#address-error, #addressSub-error")
-																	.remove();
-															$(
-																	":text[name=address], :text[name=addressSub]")
-																	.removeClass(
-																			"text_warning");
-															gd_postcode_search(
-																	"zonecode",
-																	"address",
-																	"zipcode");
-														});
-	
-										$("#btnCompanyPostcode")
-												.click(
-														function(e) {
-															e.preventDefault();
-															$(
-																	"#comAddress-error, #comAddressSub-error")
-																	.remove();
-															$(
-																	":text[name=comAddress], :text[name=comAddressSub]")
-																	.removeClass(
-																			"text_warning");
-															gd_postcode_search(
-																	"comZonecode",
-																	"comAddress",
-																	"comZipcode");
-														});
-	
-										function sendDateData(year, month, type) {
-											var dayType = "";
-											var params = {
-												year : year,
-												month : month,
-											};
-											$
-													.ajax(
-															"../share/date_select_json.php",
-															{
-																data : params,
-																method : "POST",
-																success : function(
-																		data) {
-																	if (data != ""
-																			&& data != null) {
-																		if (type == "marry") {
-																			dayType = "marriDay";
-																		} else {
-																			dayType = "birthDay";
-																		}
-																		$(
-																				"#"
-																						+ dayType)
-																				.empty();
-																		$(
-																				"#"
-																						+ dayType)
-																				.append(
-																						data);
-																	}
-																},
-															});
-										}
-	
-										$("#birthYear").change(
-												function() {
-													var birthMonthVal = $(
-															"#birthMonth").val();
-													if (birthMonthVal != "") {
-														sendDateData(
-																$("#birthYear")
-																		.val(),
-																$("#birthMonth")
-																		.val(),
-																"birth");
-													}
-												});
-										$("#birthMonth").change(
-												function() {
-													var birthYearVal = $(
-															"#birthYear").val();
-													if (birthYearVal != "") {
-														sendDateData(
-																$("#birthYear")
-																		.val(),
-																$("#birthMonth")
-																		.val(),
-																"birth");
-													}
-												});
-	
-										gd_select_email_domain("email");
-	
-										gd_member2.init($formJoin);
-	
-										$(".js_btn_join").click({
-											form : $formJoin
-										}, gd_member2.save);
-									});
-
-					function callback_not_disabled() {
-						$(".js_btn_join").prop("disabled", false);
-						$(".js_btn_join em").html("회원가입");
-					}
-				</script>
 			</div>
 			<!-- //sub_content -->
 		</div>
