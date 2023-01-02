@@ -67,7 +67,7 @@
 						<li><a href="${pageContext.request.contextPath}/join">회원가입</a></li>
 						</c:when>
 						<c:otherwise>
-						${loginSsInfo.mname}
+						<%-- ${loginSsInfo.mname} --%>
 						<li><a href="${pageContext.request.contextPath}/logout">로그아웃</a></li>
 						</c:otherwise>
 					</c:choose>
@@ -90,13 +90,13 @@
 							</a>
 								<div class="headerCsBoard">
 									<ul>
-										<li><a href="../board/list.php?bdId=notice">공지사항</a></li>
-										<li><a href="../board/list.php?bdId=event">이벤트</a></li>
-										<li><a href="../board/list.php?bdId=goodsqa">상품문의</a></li>
-										<li><a href="../board/list.php?bdId=goodsreview">상품후기</a>
+										<li><a href="/">공지사항</a></li>
+										<li><a href="/">이벤트</a></li>
+										<li><a href="/">상품문의</a></li>
+										<li><a href="/">상품후기</a>
 										</li>
-										<li><a href="../board/list.php?bdId=lookbook">룩북</a></li>
-										<li><a href="../service/faq.php">자주하는질문</a></li>
+										<li><a href="/">룩북</a></li>
+										<li><a href="/">자주하는질문</a></li>
 										<li><a href="${pageContext.request.contextPath}/boardWrite">1:1문의하기</a></li>
 									</ul>
 								</div>
@@ -167,17 +167,17 @@
 								disabled="disabled">Previous</button>
 							<ul class="menuCategory" style="overflow: visible">
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=011">PROMOTION</a></li>
+									href="${pageContext.request.contextPath}/product">PROMOTION</a></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=001">TENT &amp; TARP</a>
+									href="${pageContext.request.contextPath}/product">TENT &amp; TARP</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=001001">TENT</a></li>
+												href="/">TENT</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=001002">TARP</a></li>
+												href="/">TARP</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=001003">TENT &amp;
+												href="/">TENT &amp;
 													TARP ACC</a></li>
 										</ul>
 										<div class="categoryBanner">
@@ -188,13 +188,13 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=002">SHELTER</a>
+									href="${pageContext.request.contextPath}/product">SHELTER</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=002001">SHELTER</a></li>
+												href="/">SHELTER</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=002002">SHELER ACC</a></li>
+												href="/">SHELER ACC</a></li>
 										</ul>
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -204,19 +204,19 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=003">FURNITURE</a>
+									href="${pageContext.request.contextPath}/product">FURNITURE</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=003001">TABLE</a></li>
+												href="/">TABLE</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=003004">CHAIR</a></li>
+												href="/">CHAIR</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=003005">COT</a></li>
+												href="/">COT</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=003002">STORAGE</a></li>
+												href="/">STORAGE</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=003003">ETC</a></li>
+												href="/">ETC</a></li>
 										</ul>
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -226,7 +226,7 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory hasChild"><a
-									href="../goods/goods_list.php?cateCd=004">SLEEPING BAG</a>
+									href="${pageContext.request.contextPath}/product">SLEEPING BAG</a>
 									<div class="subCategory depth1">
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -235,17 +235,17 @@
 										</div>
 									</div></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=005">TABLEWARE</a>
+									href="${pageContext.request.contextPath}/product">TABLEWARE</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=005001">CUP</a></li>
+												href="/">CUP</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=005002">COOKWARE</a></li>
+												href="/">COOKWARE</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=005003">ETC</a></li>
+												href="/">ETC</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=005004">COOLERS</a></li>
+												href="/">COOLERS</a></li>
 										</ul>
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -255,18 +255,18 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=006">LANTERN &amp;
+									href="${pageContext.request.contextPath}/product">LANTERN &amp;
 										STOVE</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=006001">LANTERN</a></li>
+												href="/">LANTERN</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=006002">STOVE</a></li>
+												href="/">STOVE</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=006003">FIRE PITS</a></li>
+												href="/">FIRE PITS</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=006004">ACC</a></li>
+												href="/">ACC</a></li>
 										</ul>
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -276,23 +276,23 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory"><a
-									href="../goods/goods_list.php?cateCd=007">APPAREL</a>
+									href="${pageContext.request.contextPath}/product">APPAREL</a>
 									<div class="subCategory depth1">
 										<ul>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007001">OUTER</a></li>
+												href="/">OUTER</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007002">TOP</a></li>
+												href="/">TOP</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007003">VEST</a></li>
+												href="/">VEST</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007004">BOTTOM</a></li>
+												href="/">BOTTOM</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007005">ONE-PIECE</a></li>
+												href="/">ONE-PIECE</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007007">SET</a></li>
+												href="/">SET</a></li>
 											<li class=" "><a
-												href="../goods/goods_list.php?cateCd=007006">ACC</a></li>
+												href="/">ACC</a></li>
 										</ul>
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -302,7 +302,7 @@
 									</div>
 									<button class="categoryMore"></button></li>
 								<li class="originCategory hasChild"><a
-									href="../goods/goods_list.php?cateCd=008">MAT</a>
+									href="${pageContext.request.contextPath}/product">MAT</a>
 									<div class="subCategory depth1">
 										<div class="categoryBanner">
 											<a href="#"><img
@@ -311,7 +311,7 @@
 										</div>
 									</div></li>
 								<li class="originCategory hasChild"><a
-									href="../goods/goods_list.php?cateCd=009">BAG</a>
+									href="${pageContext.request.contextPath}/product">BAG</a>
 									<div class="subCategory depth1">
 										<div class="categoryBanner">
 											<a href="#"><img
