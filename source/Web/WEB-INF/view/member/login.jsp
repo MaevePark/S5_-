@@ -70,12 +70,12 @@
               <div class="member_cont">
                 <form id="formLogin" action="<%=request.getContextPath()%>/login.do" method="post">
                   <input type="hidden" id="mode" name="mode" value="login" />
-                  <input
+<!--                   <input
                     type="hidden"
                     id="returnUrl"
                     name="returnUrl"
                     value="http%3A%2F%2Fnvot.co.kr%2Fmain%2Findex.php"
-                  />
+                  /> -->
                   <div class="member_login_box">
                     <h3>회원 로그인</h3>
                     <div class="login_input_sec">
@@ -121,11 +121,10 @@
                   <!-- //login_box -->
                   <div class="member_sns_login"></div>
                   <div class="btn_login_box">
-                    <ul>
-                      <li>
-                        <button id="btnJoinMember" class="btn_member_join">
-                          회원가입
-                        </button>
+                    <ul>                    	
+                      <li>                      	
+	                    <button id="btnJoinMember" class="btn_member_join"  onclick="location.href='<%=request.getContextPath()%>/join'">회원가입
+	                    </button> 
                       </li>
                       <li>
                         <button id="btnFindId" class="btn_member_white">
@@ -133,7 +132,7 @@
                         </button>
                       </li>
                       <li>
-                        <button id="btnFindPwd" class="btn_member_white">
+                        <button id="btnFindPwd" class="btn_member_white" >
                           비밀번호 찾기
                         </button>
                       </li>
