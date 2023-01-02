@@ -4,28 +4,33 @@ public class BoardCategoryVo {
 //	BOARD_CATEGORY_CODE NOT NULL NUMBER(2)    
 //	BOARD_CATEGORY_NAME NOT NULL VARCHAR2(20) 
 	
-	private int BOARD_CATEGORY_CODE;
-	private String BOARD_CATEGORY_NAME;
-	public BoardCategoryVo(int bOARD_CATEGORY_CODE, String bOARD_CATEGORY_NAME) {
+	private int board_category_code;
+	private String board_category_name;
+	
+	public BoardCategoryVo() {
 		super();
-		BOARD_CATEGORY_CODE = bOARD_CATEGORY_CODE;
-		BOARD_CATEGORY_NAME = bOARD_CATEGORY_NAME;
+	}
+	public BoardCategoryVo(int board_category_code, String board_category_name) {
+		super();
+		this.board_category_code = board_category_code;
+		this.board_category_name = board_category_name;
 	}
 	@Override
 	public String toString() {
-		return "BoardCategoryVo [BOARD_CATEGORY_CODE=" + BOARD_CATEGORY_CODE + ", BOARD_CATEGORY_NAME="
-				+ BOARD_CATEGORY_NAME + "]";
+		return "BoardCategoryVo [board_category_code=" + board_category_code + ", board_category_name="
+				+ board_category_name + "]";
 	}
-	public int getBOARD_CATEGORY_CODE() {
-		return BOARD_CATEGORY_CODE;
+	public int getBoard_category_code() {
+		return board_category_code;
 	}
-	public void setBOARD_CATEGORY_CODE(int bOARD_CATEGORY_CODE) {
-		BOARD_CATEGORY_CODE = bOARD_CATEGORY_CODE;
+	public void setBoard_category_code(int board_category_code) {
+		this.board_category_code = board_category_code;
 	}
-	public String getBOARD_CATEGORY_NAME() {
-		return BOARD_CATEGORY_NAME;
+	public String getBoard_category_name() {
+		return board_category_name;
 	}
-	public void setBOARD_CATEGORY_NAME(String bOARD_CATEGORY_NAME) {
-		BOARD_CATEGORY_NAME = bOARD_CATEGORY_NAME;
-	}		
+	public void setBoard_category_name(String board_category_name) {
+		this.board_category_name = board_category_name;
+	}
+	
 }
