@@ -44,9 +44,7 @@ public class LoginDoController extends HttpServlet {
 			System.out.println("로그인 실패");
 			response.sendRedirect(request.getContextPath()+"/login");		
 		} 
-		
 	}
-
 }
 
 
