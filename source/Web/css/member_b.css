@@ -21,7 +21,7 @@
 .member_cont .member_login_box .login_input_sec{overflow:hidden;}
 .member_cont .member_login_box .login_input_sec > div{float:left;}
 .member_cont .member_login_box .login_input_sec input{display:block; width:292px; height:36px; margin:15px 0 10px 0; padding:0 0 0 8px; border:1px solid #d0d0d0; color:#979d9d;}
-/* .member_cont .member_login_box .login_input_sec button{float:right; width:158px; height:91px; margin:15px 0 0 0; border:1px solid #ab3e55; background:#ab3e55; color:#ffffff; font-size: 15px; font-weight:bold; cursor:pointer;} */
+.member_cont .member_login_box .login_input_sec button{float:right; width:158px; height:91px; margin:15px 0 0 0; border:1px solid #ab3e55; background:#ab3e55; color:#ffffff; font-size: 15px; font-weight:bold; cursor:pointer;}
 .member_cont .member_login_box .login_input_sec button:hover{background:#fff; border:1px solid #222222;}
 .member_cont .member_login_box .id_chk{padding:0 0 26px 0;}
 .member_cont .member_login_box .id_chk p{padding:6px 0 0 0;}
