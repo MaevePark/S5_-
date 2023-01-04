@@ -5,15 +5,17 @@
     <welcome-file>/WEB-INF/view/index.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- controller 를 줄여줄 방법 중 1가지 -->
-  <!-- servlet 태그는 servlet 역할을 해줌 1/4 수업예정 -->
-  
-  <servlet>
-  	<servlet-name>aaa</servlet-name>
-  	<servlet-class>kh.s5.nvot.member.controller.LoginController</servlet-class>
-  </servlet>
-  
- <servlet-mapping>
+  	<!-- controller 를 줄여줄 방법 중 1가지 -->
+ 	<!-- servlet 태그는 servlet 역할을 해줌 -->  
+  	<servlet>
+  	<servlet-name>TestServlet</servlet-name>
+  	<servlet-class>kh.s5.nvot.member.controller.LoginController</servlet-class> 
+  	</servlet>
+ 	 <servlet-mapping>
+  	<servlet-name>TestServlet</servlet-name>
+  	<url-pattern>/abc</url-pattern>  
+  	</servlet-mapping>
+	 <servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.js</url-pattern>
 		<url-pattern>*.css</url-pattern>
@@ -26,4 +28,14 @@
 		<url-pattern>*.svg</url-pattern>
 		<url-pattern>*.webp</url-pattern>
 	</servlet-mapping>
+	
+	<!-- 필터 -->
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>common.filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
