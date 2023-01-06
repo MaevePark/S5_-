@@ -151,7 +151,8 @@
         <!-- //sub_content -->
       </div>
       <!-- //본문 끝 contents -->
-    </div>
+    </div>   
+
   <%@include file="/WEB-INF/view/member/footer.jsp"%>
 </body>
 </html>
