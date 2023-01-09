@@ -1,23 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>join_main</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>join_main</title>
-    
-	<link href="<%=request.getContextPath()%>/css/reset.css" rel="stylesheet">
-	<link href="<%=request.getContextPath()%>/css/member_a.css" rel="stylesheet">
-	<link href="<%=request.getContextPath()%>/css/member_b.css" rel="stylesheet">
-	<link href="<%=request.getContextPath()%>/css/join_main.css" rel="stylesheet">
-	<script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
-    
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/reset.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/common.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_a.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/member_b.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/layout.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/index.css" />
+<link rel="stylesheet"href="<%=request.getContextPath()%>/css/join_main.css" />
+
+<script src="<%=request.getContextPath()%>/js/jquery-3.6.1.js"></script>
+<script src="<%=request.getContextPath()%>/js/header.js"></script>
+
+<title>약관동의</title>
 </head>
 <body>
+  <%@include file="/WEB-INF/view/member/header.jsp"%>
     <div id="container" class="subPageContainer">
       <div id="contents">
         <!-- 본문 시작 -->
@@ -50,12 +54,12 @@
               </div>
               <!-- //member_tit -->
               <div class="member_cont">
-                <form
+<%--                  <form
                   id="formTerms"
                   name="formTerms"
                   method="post"
-                  action="../member/join.php"
-                >
+                  action="<%=request.getContextPath()%>/joinMain"
+                > --%>
                   <input
                     type="hidden"
                     name="token"
@@ -598,46 +602,25 @@
                       </div>
                       <!-- //agreement_box -->
                     </div>
-                    <!-- //join_agreement_box -->
-
-                    <!--  -->
-                    <!-- //join_agreement_box -->
-
-                    <!--  -->
-                    <!-- //join_agreement_box -->
-
-                    <!--  -->
-                    <!-- //join_agreement_box -->
-                    <!-- <div class="important_check_box">
-                      <strong class="important_check dn"
-                        >이용약관과 개인정보 수집 및 이용에 대한 안내 모두
-                        동의해주세요.</strong
-                      >
-                    </div> -->
-                  </div>
-                  <!-- //join_agreement_cont -->
-
-                  <!--  -->
-                  <!-- //join_certify_box -->
-
                   <div class="btn_center_box">
-                    <button
+                  	<button
                       type="button"
                       id="btnNextStep"
                       class="btn_member_next"
-                    >
-                      다음단계
-                    </button>
+                      onclick="location.href='<%=request.getContextPath()%>/join'"
+                    >다음단계
+                    </button> 
+                    
                   </div>
                   <!-- //btn_member_sec -->
-                </form>
+<!--                  </form> -->
               </div>
               <!-- //member_cont -->
             </div>
             <!-- //join_agreement_wrap -->
           </div>
           <!-- //content_box -->
-          <script type="text/javascript">
+<!--           <script type="text/javascript">
             $(document).ready(function () {
               var body = $("body"),
                 $formTerms = $("#formTerms");
@@ -815,12 +798,12 @@
                 });
               }
             });
-          </script>
+          </script> -->
         </div>
         <!-- //sub_content -->
       </div>
       <!-- //본문 끝 contents -->
     </div>
-
+  <%@include file="/WEB-INF/view/member/footer.jsp"%>
 </body>
 </html>
