@@ -3,7 +3,7 @@
 ## Contents <img width="30" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008133/noticon/mw0xnjgco64rfeviwqvy.png">
 
 1. [수행기간](#1️⃣-수행기간)
-2. [프로젝트-개요](#2️⃣-프로젝트-개요)
+2. [프로젝트 개요](#2️⃣-프로젝트 개요)
 3. [구현목표](#3️⃣-구현목표)
 4. [개발환경](#4️⃣-개발환경)
 5. [주요기능](#5️⃣-주요기능)
