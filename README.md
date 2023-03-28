@@ -83,13 +83,6 @@
 
 <br>
 
-<div align="center">
-<img width="200" alt="image" src="https://user-images.githubusercontent.com/107298972/227529729-a21f7786-bc05-44b8-aa63-a40bf8924afc.PNG">
-</div>
-
-
-<br>
-
 ## 6️⃣ Document
 
 <br>
