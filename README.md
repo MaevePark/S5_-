@@ -130,8 +130,8 @@
 ![9](https://user-images.githubusercontent.com/107298972/227389898-8253f498-fed9-41b2-9116-a3d9a71448b4.PNG)
 
 <br>
-
-## 7. Class-URL Mapping
+  
+## 7. History
 
 [Class-URL Mapping 전체보기](https://docs.google.com/spreadsheets/d/1Y4mk1g244npNTQAbNHyhDn68mpwP-RezO1zHm3WwWRA/edit?usp=sharing)
 
