@@ -35,9 +35,7 @@
 
 ## 5️⃣ 주요기능
 
-<div align="center">
-<img width="200" alt="image" src="https://user-images.githubusercontent.com/107298972/227529728-2d0acc6d-93e6-44db-b645-f06b494e8e8a.PNG">
-</div>
+![주요 기능](https://user-images.githubusercontent.com/111377620/228588201-a66a27e5-cfde-4a89-80bd-326ba8affac6.png)
 
 <details>
 
@@ -80,6 +78,132 @@
 </details>
 
 ---
+  
+<details>
+
+<summary><h3>✅ 로그인 페이지 </h3></summary>
+
+<div markdown="1"> 
+
+<div align="center">
+
+<img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
+기능 타이틀(아래에 움짤) 
+<img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
+
+</div>
+
+<br>
+
+<div align="center">
+
+![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+
+</div>
+
+---
+
+  (여기부터 ppt의 기능설명 첨부)
+  
+<div align="center">
+
+<img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
+
+</div>
+
+<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+
+- ppt 설명
+- ppt 설명
+- ppt 설명
+
+</details>
+
+---
+
+<details>
+
+<summary><h3>✅ 회원가입 페이지 </h3></summary>
+
+<div markdown="1"> 
+
+<div align="center">
+
+<img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
+기능 타이틀(아래에 움짤) 
+<img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
+
+</div>
+
+<br>
+
+<div align="center">
+
+![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+
+</div>
+
+---
+
+  (여기부터 ppt의 기능설명 첨부)
+  
+<div align="center">
+
+<img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
+
+</div>
+
+<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+
+- ppt 설명
+- ppt 설명
+- ppt 설명
+
+</details> 
+
+---
+  
+<details>
+
+<summary><h3>✅ 커뮤니티 페이지 </h3></summary>
+
+<div markdown="1"> 
+
+<div align="center">
+
+<img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
+기능 타이틀(아래에 움짤) 
+<img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
+
+</div>
+
+<br>
+
+<div align="center">
+
+![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+
+</div>
+
+---
+
+  (여기부터 ppt의 기능설명 첨부)
+  
+<div align="center">
+
+<img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
+
+</div>
+
+<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+
+- ppt 설명
+- ppt 설명
+- ppt 설명
+
+</details>
+  
+---  
 
 <br>
 
