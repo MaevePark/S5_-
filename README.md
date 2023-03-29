@@ -19,7 +19,7 @@
 
 ## 2️⃣ 프로젝트 개요
 
-![intro](https://user-images.githubusercontent.com/107298972/227526411-05f66529-e392-4f10-9030-c15e7817ed3e.PNG)
+- **TODO**
 
 ## 3️⃣ 구현목표
 
@@ -29,13 +29,13 @@
 
 ## 4️⃣ 개발환경
 
-![environment](https://user-images.githubusercontent.com/107298972/227527011-874cb8c5-dfba-4529-afc9-8ee62a496053.PNG)
+![개발환경 및 구현기술](https://user-images.githubusercontent.com/111377620/228592856-6b31c7a2-b534-4232-8da9-a47dd491ee59.png)
 
 <br>
 
 ## 5️⃣ 주요기능
 
-![주요 기능](https://user-images.githubusercontent.com/111377620/228588201-a66a27e5-cfde-4a89-80bd-326ba8affac6.png)
+![주요 기능](https://user-images.githubusercontent.com/111377620/228594205-31a7a9a5-ffaf-4245-80d0-d33390cdf8bc.png)
 
 <details>
 
