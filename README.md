@@ -89,7 +89,7 @@
   
 ##  1. 개발 일정
 
-![schedule](https://user-images.githubusercontent.com/111377620/228572803-4ff89844-3681-41bc-81cf-a63e70bad3f3.png)
+![프로젝트 일정](https://user-images.githubusercontent.com/111377620/228581007-3b54c71b-c71a-4e03-bad6-2f6f39580429.png)
 
 [개발일정 전체보기](https://docs.google.com/spreadsheets/d/1qgaBi2Stp9QdD2ft-rDFxLhydE2dNDhQjI8ZB4A_YFI/edit#gid=1421974715)
 
