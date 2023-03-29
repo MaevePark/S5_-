@@ -29,13 +29,14 @@
 
 ## 4️⃣ 개발환경
 
-![개발환경 및 구현기술](https://user-images.githubusercontent.com/111377620/228592856-6b31c7a2-b534-4232-8da9-a47dd491ee59.png)
+![개발환경 및 구현기술](https://user-images.githubusercontent.com/111377620/228602766-e8a83916-b1af-49bd-be89-fe52384b8b86.png)
 
 <br>
 
 ## 5️⃣ 주요기능
 
-![주요 기능](https://user-images.githubusercontent.com/111377620/228594205-31a7a9a5-ffaf-4245-80d0-d33390cdf8bc.png)
+![주요 기능](https://user-images.githubusercontent.com/111377620/228602803-b7a24265-89ef-4a30-b890-cb79261ead2e.png)
+
 
 <details>
 
@@ -213,7 +214,7 @@
   
 ##  1. 개발 일정
 
-![프로젝트 일정](https://user-images.githubusercontent.com/111377620/228581007-3b54c71b-c71a-4e03-bad6-2f6f39580429.png)
+![프로젝트 일정](https://user-images.githubusercontent.com/111377620/228602879-3a1b9d44-2468-4d31-8699-d746c50173cf.png)
 
 [개발일정 전체보기](https://docs.google.com/spreadsheets/d/1qgaBi2Stp9QdD2ft-rDFxLhydE2dNDhQjI8ZB4A_YFI/edit#gid=1421974715)
 
