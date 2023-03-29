@@ -88,8 +88,10 @@
 <br>
   
 ##  1. 개발 일정
-  
-![schedule](https://user-images.githubusercontent.com/107298972/227391259-8b7f2e30-3e85-4826-8278-edfcf941d7a6.png)
+
+![schedule](https://user-images.githubusercontent.com/111377620/228572803-4ff89844-3681-41bc-81cf-a63e70bad3f3.png)
+
+[개발일정 전체보기](https://docs.google.com/spreadsheets/d/1qgaBi2Stp9QdD2ft-rDFxLhydE2dNDhQjI8ZB4A_YFI/edit#gid=1421974715)
 
 <br>
 
