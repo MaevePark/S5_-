@@ -115,19 +115,19 @@
 
 ## 5. ERD
 
-![Stay Fit](https://user-images.githubusercontent.com/101506107/227589143-416c7eb6-5836-4017-afff-e3edd6992ea2.png)
+![semi_project_nvot](https://user-images.githubusercontent.com/111377620/228584679-7fe40bf1-2b07-4d63-b6f6-dc7c9982c032.png)
 
 <br>
 
 ## 6. Class Diagram
 
-![1](https://user-images.githubusercontent.com/107298972/227389844-1b654d0a-bd29-44e7-9fe2-8455a2ae4439.PNG)
+![1]()
 
 <br>
   
 ## 7. History
 
-[Class-URL Mapping 전체보기](https://docs.google.com/spreadsheets/d/1Y4mk1g244npNTQAbNHyhDn68mpwP-RezO1zHm3WwWRA/edit?usp=sharing)
+[History 전체보기](https://docs.google.com/spreadsheets/d/1AQlCSLg-VBfFOFFGFI2pcUUGj-VvoQVv/edit#gid=1701566558)
 
 <br>
   
