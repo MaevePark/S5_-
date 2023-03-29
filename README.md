@@ -232,11 +232,11 @@
 
 <br>
 
-## 4. 유스케이스
+## 4. UseCase Diagram
 
 ![UseCaseDiagram](https://user-images.githubusercontent.com/111377620/228603803-9b51cf0c-ebe7-4666-bf44-f21d7545644f.png)
   
-[유스케이스 전체보기](https://docs.google.com/document/d/1KHI92ZlRB0Qsj9PC6fZNTQDWgSINegyaeiXYcmmjYq4/edit?usp=sharing)
+[UseCase Diagram 전체보기](https://docs.google.com/document/d/1KHI92ZlRB0Qsj9PC6fZNTQDWgSINegyaeiXYcmmjYq4/edit?usp=sharing)
 
 <br>
 
