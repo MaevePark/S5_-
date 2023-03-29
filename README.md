@@ -97,13 +97,13 @@
 
 ## 2. 요구사항 정의서
 
-[요구사항 정의서 전체보기](https://docs.google.com/spreadsheets/d/1KwPPIOvbtx6iLBYWeOTz1Xbgg2AxTLXkiR6dffgKtKI/edit?usp=sharing)
+[요구사항 정의서 전체보기](https://docs.google.com/spreadsheets/d/1xb1wR4L5h0_hMfXTB2fIgQLs-fSqsQLZH-l-m3iel1U/edit#gid=0)
 
 <br>
 
 ## 3. 화면설계서
 
-[화면설계서 전체보기](https://docs.google.com/presentation/d/17mvEzwbY7duA4sOmJir4F-DPswTtmLWUBR7I65_9Y1o/edit?usp=sharing)
+[화면설계서 전체보기]()
 
 <br>
 
@@ -122,14 +122,6 @@
 ## 6. Class Diagram
 
 ![1](https://user-images.githubusercontent.com/107298972/227389844-1b654d0a-bd29-44e7-9fe2-8455a2ae4439.PNG)
-![2](https://user-images.githubusercontent.com/107298972/227389852-019c32c8-b1ad-4ff3-99d6-dcc26bd7e687.PNG)
-![3](https://user-images.githubusercontent.com/107298972/227389861-c1f82d1d-fa50-456a-aa39-2323b7166de8.PNG)
-![4](https://user-images.githubusercontent.com/107298972/227389870-78e53b56-4233-470f-905a-f392b20057fb.PNG)
-![5](https://user-images.githubusercontent.com/107298972/227389889-474fbfc5-4adc-4393-bd5d-bca19d46634b.PNG)
-![6](https://user-images.githubusercontent.com/107298972/227389893-bf749587-28a6-497c-bde4-92b21ed747d2.PNG)
-![7](https://user-images.githubusercontent.com/107298972/227389894-ea7737ca-3e5b-403c-9026-d2e577b31b4f.PNG)
-![8](https://user-images.githubusercontent.com/107298972/227389895-b42ed99b-1bfc-4496-a309-0742574cbd4d.PNG)
-![9](https://user-images.githubusercontent.com/107298972/227389898-8253f498-fed9-41b2-9116-a3d9a71448b4.PNG)
 
 <br>
   
@@ -141,12 +133,12 @@
   
 ## 8. 테스트케이스
 
-[테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1CUfAPQjepuZhuJSZd0vG0lDfG3PLzNpk/edit?usp=sharing&ouid=109127275470141851694&rtpof=true&sd=true)
+[테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1KmTdoRV8rgC9udDMvjIf_iF-oL1Q7xlhmlt1iGT8YFI/edit#gid=391885132)
 
 <br>
 
 ## 9. 발표자료
 
-[발표자료 전체보기](https://docs.google.com/presentation/d/1wWlxxcaVD1r7EQgdhF3RZihA3Roposu8O_bcn0kgC7Y/edit?usp=sharing)
+[발표자료 전체보기](https://docs.google.com/presentation/d/1_a-SlHhNwu9jhUzXPSkm85x-GYmpdY9p/edit#slide=id.g18062697faf_4_39)
 
 <br>
