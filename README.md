@@ -1,4 +1,4 @@
-# 세미프로젝트 - S5_NVoT
+# 세미프로젝트(개인) - NVoT 캠핑 용품 판매 사이트 
 
 ## Contents <img width="30" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008133/noticon/mw0xnjgco64rfeviwqvy.png">
 
