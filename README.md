@@ -278,13 +278,13 @@
 
 ## 3. 화면설계서
 
-[화면설계서 전체보기]()
+- **TODO**
 
 <br>
 
 ## 4. UseCase Diagram
   
-[UseCase Diagram 전체보기](https://docs.google.com/document/d/1KHI92ZlRB0Qsj9PC6fZNTQDWgSINegyaeiXYcmmjYq4/edit?usp=sharing)
+- **TODO**
 
 <br>
 
