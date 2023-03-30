@@ -314,6 +314,6 @@
 
 ## 9. 발표자료
 
-[발표자료 전체보기](https://docs.google.com/presentation/d/1_a-SlHhNwu9jhUzXPSkm85x-GYmpdY9p/edit#slide=id.g18062697faf_4_39)
+- **TODO**
 
 <br>
