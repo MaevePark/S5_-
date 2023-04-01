@@ -1,4 +1,4 @@
-# 세미프로젝트 - NVoT 캠핑 용품 판매 사이트 
+# :pushpin: 세미프로젝트 - NVoT 캠핑 용품 판매 사이트 
 
 ## Contents <img width="30" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008133/noticon/mw0xnjgco64rfeviwqvy.png">
 
@@ -263,7 +263,7 @@
 
 <br>
   
-##  1. 프로젝트 일정
+###  6-1. 프로젝트 일정
 
 ![프로젝트 일정](https://user-images.githubusercontent.com/111377620/228602879-3a1b9d44-2468-4d31-8699-d746c50173cf.png)
 
@@ -271,55 +271,57 @@
 
 <br>
 
-## 2. 요구사항 정의서
+### 6-2. 요구사항 정의서
 
 [요구사항 정의서 전체보기](https://docs.google.com/spreadsheets/d/1xb1wR4L5h0_hMfXTB2fIgQLs-fSqsQLZH-l-m3iel1U/edit#gid=0)
 
 <br>
 
-## 3. 화면설계서
+### 6-3. 화면설계서
 
 - **TODO**
 
 <br>
 
-## 4. UseCase Diagram
+### 6-4. UseCase Diagram
   
 - **TODO**
 
 <br>
 
-## 5. ERD
+### 6-5. ERD 계설계
 
 ![semi_project_nvot](https://user-images.githubusercontent.com/111377620/228584679-7fe40bf1-2b07-4d63-b6f6-dc7c9982c032.png)
 
 <br>
 
-## 6. Class Diagram
-
-![1]()
+### 6-6. Class Diagram
+  
+<details>
+<summary><h3> Class Diagram 펼치기 </h3></summary>
+</details>
 
 <br>
   
-## 7. History
+### 6-7. History
 
 [History 전체보기](https://docs.google.com/spreadsheets/d/1AQlCSLg-VBfFOFFGFI2pcUUGj-VvoQVv/edit#gid=1701566558)
 
 <br>
   
-## 8. 테스트케이스
+### 6-8. 테스트케이스
 
 [테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1KmTdoRV8rgC9udDMvjIf_iF-oL1Q7xlhmlt1iGT8YFI/edit#gid=391885132)
 
 <br>
 
-## 9. 발표자료
+### 6-9. 발표자료
 
 - **TODO**
 
 <br>
 
-## 10. 느낀점 및 보완점
+### 6-10. 느낀점 및 보완점
 
 - **느낀점**
 
