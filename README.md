@@ -289,7 +289,7 @@
 
 <br>
 
-### 6-5. ERD 계설계
+### 6-5. ERD 설계
 
 ![semi_project_nvot](https://user-images.githubusercontent.com/111377620/228584679-7fe40bf1-2b07-4d63-b6f6-dc7c9982c032.png)
 
