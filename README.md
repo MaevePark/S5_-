@@ -269,33 +269,22 @@
 ![semi_project_nvot](https://user-images.githubusercontent.com/111377620/228584679-7fe40bf1-2b07-4d63-b6f6-dc7c9982c032.png)
 
 <br>
-
-### 6-6. Class Diagram
   
-<details>
-<summary><h3> Class Diagram 펼치기 </h3></summary>
-</details>
-
-<br>
-  
-### 6-7. History
+### 6-6. History
 
 [History 전체보기](https://docs.google.com/spreadsheets/d/1AQlCSLg-VBfFOFFGFI2pcUUGj-VvoQVv/edit#gid=1701566558)
 
 <br>
   
-### 6-8. 테스트케이스
+### 6-7. 테스트케이스
 
 [테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1KmTdoRV8rgC9udDMvjIf_iF-oL1Q7xlhmlt1iGT8YFI/edit#gid=391885132)
 
 <br>
 
-### 6-9. 발표자료
+### 6-8. 발표자료
 
 - **TODO**
 
-<br>
 
-### 6-10. 회고
-
-- 
+### 이상입니다 감사합니다.
