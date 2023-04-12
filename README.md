@@ -63,8 +63,7 @@
 
 ## 5️⃣ 주요 기능
 
-![주요 기능](https://user-images.githubusercontent.com/111377620/228602803-b7a24265-89ef-4a30-b890-cb79261ead2e.png)
-
+![주요기능](https://user-images.githubusercontent.com/111377620/231515047-b9600c1b-d00e-4422-96c8-38ff299613c6.png)
 
 <details>
 
