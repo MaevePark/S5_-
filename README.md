@@ -200,7 +200,7 @@
 <div align="center">
 
 <img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
+게시글 목록 조회
 <img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
 
 </div>
