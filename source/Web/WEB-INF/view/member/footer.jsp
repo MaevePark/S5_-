@@ -127,34 +127,6 @@
         </div>
         <div class="footerEtc">
           <div class="inner">
-            <ul class="footerSns -moveDom">
-               <a href="https://www.instagram.com/nvot_shop/"
-                  ><img
-                    src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_04.png"
-                    alt="인스타그램"
-                    title=""
-                /></a>
-                <a href="https://www.instagram.com/minimal_works/"
-                  ><img
-                    src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_04.png"
-                    alt="인스타그램"
-                    title=""
-                /></a>
-               <a href="https://blog.naver.com/mnmalworks"
-                  ><img
-                    src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_06.png"
-                    alt="블로그"
-                    title=""
-                /></a>
-                <a
-                  href="https://www.youtube.com/channel/UCChcXRAWtm_PRAGc0TfKeXA?view_as=subscriber"
-                  ><img
-                    src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/_mplshop/images/sns/sns_st_08.png"
-                    alt="유튜브"
-                    title=""
-                /></a>
-              </li>
-            </ul>
             <ul class="footerLink -moveDom">
               <li>
                 <a href="../service/company.php">회사소개</a>
@@ -235,16 +207,6 @@
             <div class="Layout_footerR -moveDom">
               <div class="accLink">
                 <ul>
-                  <li>
-                    <a
-                      href="https://www.cjlogistics.com/ko/tool/parcel/tracking"
-                      target="_blank"
-                      ><img
-                        src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/img/banner/939bcf323fc52274183fe54b9cd09c44_74175.gif"
-                        alt="대한통운"
-                        title=""
-                    /></a>
-                  </li>
                   <li></li>
                   <li></li>
                 </ul>
