@@ -26,6 +26,7 @@
 	height: 675px;
 	overflow: hidden;
 }
+
 @media screen and (max-width:1240px) {
 	.mainTopSildeWrap, .mainTopSildeWrap .mainTopSilde .wideImages,
 		.mainTopSildeWrap .mainTopSilde .slick-slide {
@@ -56,103 +57,78 @@
 </style>
 </head>
 <body>
-  <%@include file="/WEB-INF/view/member/header.jsp"%>
-  <div id="container" class="subPageContainer">
-      <div id="contents">
-        <!-- 본문 시작 -->
-        <div class="sub_content">
-          <div class="content_box">
-            <div class="member_wrap">
-              <div class="member_tit">
-                <h2>로그인</h2>
-              </div>
-              <!-- //member_tit -->
-              <div class="member_cont">
-                <form id="formLogin" action="<%=request.getContextPath()%>/login.do" method="post">
-                  <input type="hidden" id="mode" name="mode" value="login" />
-<!--                   <input
+	<%@include file="/WEB-INF/view/member/header.jsp"%>
+	<div id="container" class="subPageContainer">
+		<div id="contents">
+			<!-- 본문 시작 -->
+			<div class="sub_content">
+				<div class="content_box">
+					<div class="member_wrap">
+						<div class="member_tit">
+							<h2>로그인</h2>
+						</div>
+						<!-- //member_tit -->
+						<div class="member_cont">
+							<form id="formLogin"
+								action="<%=request.getContextPath()%>/login.do" method="post">
+								<input type="hidden" id="mode" name="mode" value="login" />
+								<!--                   <input
                     type="hidden"
                     id="returnUrl"
                     name="returnUrl"
                     value="http%3A%2F%2Fnvot.co.kr%2Fmain%2Findex.php"
                   /> -->
-                  <div class="member_login_box">
-                    <h3>회원 로그인</h3>
-                    <div class="login_input_sec">
-                      <div>
-                        <input
-                          type="text"
-                          id="loginId"
-                          name="loginId"
-                          value=""
-                          placeholder="아이디"
-                          required="true"
-                          aria-required="true"
-                        />
-                        <input
-                          type="password"
-                          id="loginPwd"
-                          name="loginPwd"
-                          value=""
-                          placeholder="비밀번호"
-                          required="true"
-                          aria-required="true"
-                        />
-                      </div>
-                      <button type="submit">로그인</button>
-                    </div>
-                    <div class="id_chk">
-                      <span class="form_element">
-                        <input
-                          type="checkbox"
-                          id="saveId"
-                          name="saveId"
-                          value="y"
-                          checked="true"
-                        />
-                        <label for="saveId" class="on">아이디 저장</label>
-                      </span>
-                      <p class="dn js_caution_msg1">
-                        아이디, 비밀번호가 일치하지 않습니다. 다시 입력해
-                        주세요.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- //login_box -->
-                  <div class="member_sns_login"></div>
-                  <div class="btn_login_box">
-                    <ul>                    	
-                      <li>                      	
-	                    <button id="btnJoinMember" class="btn_member_join"  onclick="location.href='<%=request.getContextPath()%>/join'">회원가입
-	                    </button> 
-                      </li>
-                      <li>
-                        <button id="btnFindId" class="btn_member_white">
-                          아이디 찾기
-                        </button>
-                      </li>
-                      <li>
-                        <button id="btnFindPwd" class="btn_member_white" >
-                          비밀번호 찾기
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- //btn_login_box -->
-                </form>
-                <!-- //nonmember_join_box -->
-             </div>
-              <!-- //member_cont -->
-            </div>
-            <!-- //member_wrap -->
-          </div>
-          <!-- //content_box -->
-        </div>
-        <!-- //sub_content -->
-      </div>
-      <!-- //본문 끝 contents -->
-    </div>   
+								<div class="member_login_box">
+									<h3>회원 로그인</h3>
+									<div class="login_input_sec">
+										<div>
+											<input type="text" id="loginId" name="loginId" value=""
+												placeholder="아이디" aria-required="true" /> <input
+												type="password" id="loginPwd" name="loginPwd" value=""
+												placeholder="비밀번호" aria-required="true" />
+										</div>
+										<button type="submit">로그인</button>
+									</div>
+									<div class="id_chk">
+										<span class="form_element"> <input type="checkbox"
+											id="saveId" name="saveId" value="y" /> <label for="saveId"
+											class="on">아이디 저장</label>
+										</span>
+										<p class="dn js_caution_msg1">아이디, 비밀번호가 일치하지 않습니다. 다시 입력해
+											주세요.</p>
+									</div>
+								</div>
+								<!-- //login_box -->
+								<div class="btn_login_box">
+									<ul>
+										<li>
+											<button type="button" id="btnJoinMember" class="btn_member_join"
+												onclick="location.href='<%=request.getContextPath()%>/join'">회원가입
+											</button>
+										</li>
+										<li>
+											<button id="btnFindId" class="btn_member_white">아이디 찾기</button>
+										</li>
+										<li>
+											<button id="btnFindPwd" class="btn_member_white">비밀번호 찾기</button>
+										</li>
+									</ul>
+								</div>
+								<!-- //btn_login_box -->
+							</form>
+							<!-- //nonmember_join_box -->
+						</div>
+						<!-- //member_cont -->
+					</div>
+					<!-- //member_wrap -->
+				</div>
+				<!-- //content_box -->
+			</div>
+			<!-- //sub_content -->
+		</div>
+		<!-- //본문 끝 contents -->
+	</div>
 
-  <%@include file="/WEB-INF/view/member/footer.jsp"%>
+	<%@include file="/WEB-INF/view/member/footer.jsp"%>
 </body>
 </html>

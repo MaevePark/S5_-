@@ -142,11 +142,10 @@
 													<!-- //item_tit_box -->
 													<div class="item_money_box">
 														<strong class="item_price">
-															<div class="dcPrice" custom="0.00" price="53000.00"></div>
-															<span style="">${product.product_price } </span>
+															<span style="">${product.product_price } 원 </span>
 														</strong> <span class="item_mileage"> <img
 															src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/img/icon/goods_icon/icon_mileage.png"
-															alt="마일리지" title=""> ${product.product_price/10 }원
+															alt="마일리지" title=""> ${product.product_price/10 } 원
 														</span>
 													</div>
 													<!-- //item_money_box -->
