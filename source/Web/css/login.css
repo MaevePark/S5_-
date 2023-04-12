@@ -33,11 +33,10 @@
     text-align: center;
     font-size: 0;
 }
+/* 회원가입, 아이디 찾기, 비밀번호 찾기 버튼 시작 */
 .btn_member_join {
     font-size: 13px;
     background: #383838;
-}
-.btn_member_join {
     width: 150px;
     height: 45px;
     margin: 0;
@@ -46,10 +45,13 @@
     cursor: pointer;
     font-weight: bold;
 }
+.btn_member_join > li {
+	text-align: center;
+}
 .member_cont .btn_login_box li {
     float: none;
     display: inline-block;
-    margin: 0 2px;
+    margin: 0px 2px;
 }
 .btn_member_white {
     width: 150px;
@@ -61,6 +63,7 @@
     background: #fff;
     cursor: pointer;
 }
+/* 회원가입, 아이디 찾기, 비밀번호 찾기 버튼 끝 */
 .member_cont .nonmember_order_box .order_input_sec input {
     width: 94%;
     border: 1px solid #eaeaea;
