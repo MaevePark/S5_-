@@ -6,6 +6,7 @@ public class ProductImageVo {
 	
 	private String product_image_code;
 	private int product_code;
+	
 	public ProductImageVo(String product_image_code, int product_code) {
 		super();
 		this.product_image_code = product_image_code;
