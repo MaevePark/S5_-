@@ -28,6 +28,4 @@ public class LogoutController extends HttpServlet {
 		request.getSession().invalidate(); // 로그아웃을 요청하면 세션 무효화
 		response.sendRedirect(request.getContextPath()+"/main"); // 로그아웃이 완료되면, 메인 페이지로 이동
 	}
-
-
 }

@@ -30,11 +30,11 @@ public class MainController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ProductService service = new ProductService();
-		List<ProductVo> volist = service.selectList();
+		ProductService service = new ProductService(); // 객체 생성
+		List<ProductVo> volist = service.selectList(); // productVo 객체들이 담긴 List 를 가져옴
 		System.out.println(volist);
-		request.setAttribute("productlist", volist);
-		String viewPath = "WEB-INF/view/index.jsp";
-		request.getRequestDispatcher(viewPath).forward(request, response);
+		request.setAttribute("productlist", volist); // 상품리스트이름으로 request 객체에 List 저장
+		String viewPath = "WEB-INF/view/index.jsp"; // 메인페이지에 뷰 페이지로 전달
+		request.getRequestDispatcher(viewPath).forward(request, response); // forward 메소드로 request 객체와 response 객체를 파라미터로 전달
 	}
 }

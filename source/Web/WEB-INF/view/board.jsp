@@ -97,7 +97,7 @@
                                             <td class="board_tit">
                                                 
                                                 <a href="javascript:gd_btn_view('qa',650 ,'c')">
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
                                                     <strong>하남점 관련</strong>
                                                 </a>
                                             </td>
@@ -111,7 +111,7 @@
                                             <td class="board_tit">
                                                 
                                                 <a href="javascript:gd_btn_view('qa',657 ,'n')">
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
                                                     <strong>배송문의드려요</strong>
                                                 </a>    
                                             </td>
@@ -125,7 +125,7 @@
                                             <td class="board_tit">
                                                 
                                                 <a href="javascript:gd_btn_view('qa',656 ,'n')">
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
                                                     <strong>환불물건 하나만가저가셨어요</strong>
                                                 </a>    
                                             </td>
@@ -139,9 +139,9 @@
                                             <td class="board_tit">
                                                 
                                                 <a href="javascript:gd_btn_view('qa',655 ,'n')">
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
                                                     <strong>다른물건으로 보내셨어요.</strong>
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_attach_file.png" alt="파일첨부 있음" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_attach_file.png" alt="파일첨부 있음" title="">
                                                 </a>    
                                             </td>
                                             <td class="widthDisplayNone"> 최수진 </td>
@@ -154,9 +154,9 @@
                                             <td class="board_tit">
                                                 
                                                 <a href="javascript:gd_btn_view('qa',654 ,'n')">
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_secret.png" align="absmiddle" title="">
                                                     <strong>알베르게 이너텐트 지퍼 이상</strong>
-                                                    <img src="https://cdn-pro-web-218-48-godomall.spdycdn.net/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_attach_img.png" alt="이미지첨부 있음" title="">
+                                                    <img src="https://cdn-pro-web-218-48.cdn-nhncommerce.com/biobkj2_godomall_com/data/skin/front/mplshop/board/skin/qa/img/icon/icon_board_attach_file.png" alt="이미지첨부 있음" title="">
                                                 </a> 
                                             </td>
                                             <td class="widthDisplayNone"> 한동훈 </td>
