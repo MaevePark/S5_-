@@ -243,13 +243,13 @@
 
 ### 6-3. 화면설계서
 
-- **TODO**
+[화면설계서 전체보기](https://docs.google.com/presentation/d/1TIw5DeAD8_SS0Zau39jlCUkfEKpOipF6Du-BnKMYTMI/edit#slide=id.g218469d6fbc_0_0)
 
 <br>
 
 ### 6-4. UseCase Diagram
   
-- **TODO**
+[UseCase Diagram 전체보](https://docs.google.com/document/d/1Mp6auVlJ266f7adbvwXY6IVdnGTQSJv3jfRNvJjr35M/edit)
 
 <br>
 
