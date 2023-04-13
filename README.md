@@ -249,7 +249,7 @@
 
 ### 6-4. UseCase Diagram
   
-[UseCase Diagram 전체보](https://docs.google.com/document/d/1Mp6auVlJ266f7adbvwXY6IVdnGTQSJv3jfRNvJjr35M/edit)
+[UseCase Diagram 전체보기](https://docs.google.com/document/d/1Mp6auVlJ266f7adbvwXY6IVdnGTQSJv3jfRNvJjr35M/edit)
 
 <br>
 
