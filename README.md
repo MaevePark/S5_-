@@ -89,19 +89,15 @@
 
 ---
 
-  (여기부터 ppt의 기능설명 첨부)
-  
 <div align="center">
 
 <img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
 
 </div>
 
-<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+![5  상품조회](https://user-images.githubusercontent.com/111377620/231744558-b1134ada-4614-4da9-adf7-f049ebb2dda3.png)
 
-- ppt 설명
-- ppt 설명
-- ppt 설명
+- 화면 설명 : 메인페이지에서 상품리스트를 각각 클릭하면 해당되는 상품페이지로 이동하여 상품상세정보가 보여짐
 
 </details>
 
@@ -125,25 +121,21 @@
 
 <div align="center">
 
-![로그인페이지](https://user-images.githubusercontent.com/111377620/231520001-3ad71fca-45fe-442c-8e9f-be5832c5f91d.png)
+![로그인페이지](https://user-images.githubusercontent.com/111377620/231745190-3280c45f-810a-4ec1-a9c1-6fbaed60a98b.png)
 
 </div>
 
 ---
 
-  (여기부터 ppt의 기능설명 첨부)
-  
 <div align="center">
 
 <img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
 
 </div>
 
-<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+![2  로그인 및 로그아웃](https://user-images.githubusercontent.com/111377620/231744225-5c05a1df-c558-4827-b9fa-8a3f5b4f04a3.png)
 
-- ppt 설명
-- ppt 설명
-- ppt 설명
+- 화면설명 : 아이디, 비밀번호를 입력하고 로그인을 누르면 메인페이지로 이동함, 메인페이지에서는 로그인상태를 표시하기 위해 로그아웃 문구를 보여줌, 로그아웃을 클릭하면 세션을 무효화 시켜서 로그아웃 처리를 해주고 메인페이지를 보여줌
 
 </details>
 
@@ -172,8 +164,6 @@
 </div>
 
 ---
-
-  (여기부터 ppt의 기능설명 첨부)
   
 <div align="center">
 
@@ -181,11 +171,10 @@
 
 </div>
 
-<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
+![3  회원가입](https://user-images.githubusercontent.com/111377620/231744502-eab160a9-d375-4605-9abd-071261b8854a.png)
 
-- ppt 설명
-- ppt 설명
-- ppt 설명
+- 화면 설명 : 메인페이지 상단에 회원가입버튼을 클릭하면 회원가입 페이지가 보여짐 회원가입에 아이디/비밀번호/비밀번호확인/이름/이메일/휴대폰번호/전화번호/주소 등을 입력하고 회원가입 버튼을 클릭하면 로그인 페이지로 이동함
+만약 실패하거나 취소 버튼을 클릭하면 메인페이지로 이동함
 
 </details> 
 
