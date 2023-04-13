@@ -56,6 +56,7 @@
 							alt="유튜브" title=""></a>
 					</div>
 					<!-- SNS 영역 끝 -->
+				
 					<!-- 상단 카테고리 영역 시작 -->
 					<div class="headerMember">
 						<ul>
@@ -65,7 +66,6 @@
 									<li><a href="${pageContext.request.contextPath}/join">회원가입</a></li>
 								</c:when>
 								<c:otherwise>
-									<%-- ${loginSsInfo.mname} --%>
 									<li><a href="${pageContext.request.contextPath}/logout">로그아웃</a></li>
 								</c:otherwise>
 							</c:choose>
@@ -90,8 +90,7 @@
 										<li><a href="/">상품후기</a></li>
 										<li><a href="/">룩북</a></li>
 										<li><a href="/">자주하는질문</a></li>
-										<li><a
-											href="${pageContext.request.contextPath}/boardWrite">1:1문의하기</a></li>
+										<li><a href="${pageContext.request.contextPath}/boardWrite">1:1문의하기</a></li>
 									</ul>
 								</div></li>
 						</ul>

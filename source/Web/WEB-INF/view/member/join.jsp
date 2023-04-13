@@ -22,7 +22,7 @@
 
 </head>
 <body>
-	<%@include file="/WEB-INF/view/member/header.jsp"%>
+	<%@include file="/WEB-INF/view/header.jsp"%>
 	<div id="container" class="subPageContainer">
 		<div id="contents">
 			<!-- 본문 시작 -->
@@ -199,6 +199,6 @@
 			<!-- //sub_content -->
 		</div>
 	</div>
-	<%@include file="/WEB-INF/view/member/footer.jsp"%>
+	<%@include file="/WEB-INF/view/footer.jsp"%>
 </body>
 </html>

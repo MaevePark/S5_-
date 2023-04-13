@@ -29,7 +29,7 @@ public class BoardWriteController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String viewPath = "WEB-INF/view/member/boardWrite.jsp";
+		String viewPath = "WEB-INF/view/boardWrite.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 		
 //		String bnoStr = request.getParameter("bno");

@@ -34,7 +34,7 @@ public class MainController extends HttpServlet {
 		List<ProductVo> volist = service.selectList();
 		System.out.println(volist);
 		request.setAttribute("productlist", volist);
-		String viewPath = "WEB-INF/view/member/index.jsp";
+		String viewPath = "WEB-INF/view/index.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 	}
 }

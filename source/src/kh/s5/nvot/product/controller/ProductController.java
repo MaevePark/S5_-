@@ -25,7 +25,7 @@ public class ProductController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String viewPath = "WEB-INF/view/member/product.jsp";
+		String viewPath = "WEB-INF/view/product.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 		
 		

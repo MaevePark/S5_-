@@ -26,7 +26,7 @@ public class BoardController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String viewPath = "WEB-INF/view/member/board.jsp";
+		String viewPath = "WEB-INF/view/board.jsp";
 		request.getRequestDispatcher(viewPath).forward(request, response);
 	}
 

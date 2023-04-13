@@ -62,7 +62,7 @@
 </style>
 </head>
 <body>
-	<%@include file="/WEB-INF/view/member/header.jsp"%>
+	<%@include file="/WEB-INF/view/header.jsp"%>
 	<!-- TODO -->
 	<div id="container" class="subPageContainer">
 		<div id="contents">
@@ -867,6 +867,6 @@
 			<!-- //sub_content -->
 		</div>
 	</div>
-	<%@include file="/WEB-INF/view/member/footer.jsp"%>
+	<%@include file="/WEB-INF/view/footer.jsp"%>
 </body>
 </html>
