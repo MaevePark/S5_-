@@ -74,7 +74,7 @@
 <div align="center">
 
 <img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
+페이지 이동, 상품  조회
 <img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
 
 </div>
@@ -83,7 +83,7 @@
 
 <div align="center">
 
-![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+![메인페이지](https://user-images.githubusercontent.com/111377620/231519431-15f71012-571d-4070-9145-2c4bd287688a.png)
 
 </div>
 
@@ -116,7 +116,7 @@
 <div align="center">
 
 <img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
+사용자 로그인, 로그아웃
 <img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
 
 </div>
@@ -125,7 +125,7 @@
 
 <div align="center">
 
-![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+![로그인페이지](https://user-images.githubusercontent.com/111377620/231520001-3ad71fca-45fe-442c-8e9f-be5832c5f91d.png)
 
 </div>
 
@@ -158,7 +158,7 @@
 <div align="center">
 
 <img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
+사용자 회원가입
 <img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
 
 </div>
@@ -167,7 +167,7 @@
 
 <div align="center">
 
-![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
+![회원가입페이지](https://user-images.githubusercontent.com/111377620/231520045-393af2e0-0698-48c3-abea-8c9aa50372b9.png)
 
 </div>
 
@@ -200,49 +200,7 @@
 <div align="center">
 
 <img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
-<img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
-
-</div>
-
-<br>
-
-<div align="center">
-
-![1_조직도)조회,검색](https://user-images.githubusercontent.com/83773369/181914139-fe9856f3-6230-4ad8-902b-e4ab6c9ceb44.gif)
-
-</div>
-
----
-
-  (여기부터 ppt의 기능설명 첨부)
-  
-<div align="center">
-
-<img width="100" alt="image" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577544307/noticon/a7cmr2ibsfyuwcydpvny.png">
-
-</div>
-
-<img width="1887" alt="image" src="https://user-images.githubusercontent.com/83773369/181916270-7f9031d4-43bc-42be-8a7f-7475868189a0.png">
-
-- ppt 설명
-- ppt 설명
-- ppt 설명
-
-</details>
-  
----  
-
-<details>
-
-<summary><h3>✅ 상품상세 페이지 </h3></summary>
-
-<div markdown="1"> 
-
-<div align="center">
-
-<img alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png"> 
-기능 타이틀(아래에 움짤) 
+게시글 목록 조회
 <img width="250" alt="image" src="https://media.discordapp.net/attachments/692994434526085184/1002954522253074472/a0c55ca0bfe82413.png">
 
 </div>
@@ -311,33 +269,22 @@
 ![semi_project_nvot](https://user-images.githubusercontent.com/111377620/228584679-7fe40bf1-2b07-4d63-b6f6-dc7c9982c032.png)
 
 <br>
-
-### 6-6. Class Diagram
   
-<details>
-<summary><h3> Class Diagram 펼치기 </h3></summary>
-</details>
-
-<br>
-  
-### 6-7. History
+### 6-6. History
 
 [History 전체보기](https://docs.google.com/spreadsheets/d/1AQlCSLg-VBfFOFFGFI2pcUUGj-VvoQVv/edit#gid=1701566558)
 
 <br>
   
-### 6-8. 테스트케이스
+### 6-7. 테스트케이스
 
 [테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1KmTdoRV8rgC9udDMvjIf_iF-oL1Q7xlhmlt1iGT8YFI/edit#gid=391885132)
 
 <br>
 
-### 6-9. 발표자료
+### 6-8. 발표자료
 
 - **TODO**
 
-<br>
 
-### 6-10. 회고
-
-- 
+### 이상입니다 감사합니다.
