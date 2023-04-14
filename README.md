@@ -133,7 +133,7 @@
 
 <div align="center">
 
-![로그인페이지](https://user-images.githubusercontent.com/111377620/231745190-3280c45f-810a-4ec1-a9c1-6fbaed60a98b.png)
+![2  로그인 및 로그아웃_시연영상_ver 3](https://user-images.githubusercontent.com/111377620/232057439-00998cd2-5072-4034-871d-69091b84d2bf.gif)
 
 </div>
 
