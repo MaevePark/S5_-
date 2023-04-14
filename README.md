@@ -287,7 +287,7 @@
 
 ### 6-8. 발표자료
 
-[발표자료 전체보기](https://docs.google.com/presentation/d/1jvBkzOH1QPCsWC0CWFXRq2K5cB8Y7Fpg/edit#slide=id.p2)
+[발표자료 전체보기(pdf)](https://drive.google.com/drive/folders/1GpIAd_-SNo8cJnrNXnLFlssg-dYQXW_u)
 
 <br>
 
