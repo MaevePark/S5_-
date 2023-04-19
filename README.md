@@ -263,7 +263,7 @@
 
 ### 6-4. UseCase Diagram
   
-[UseCase Diagram 전체보기(PDF)](https://github.com/MaevePark/S5_NVoT/files/11271961/UseCase.Diagram.pdf)
+[UseCase Diagram 전체보기(PDF)](https://drive.google.com/file/d/1Bwwm8IGdryyjuCvyKbUocjQqMzf5Xywi/view)
 
 <br>
 
@@ -275,13 +275,13 @@
   
 ### 6-6. History
 
-[History 전체보기](https://docs.google.com/spreadsheets/d/1AQlCSLg-VBfFOFFGFI2pcUUGj-VvoQVv/edit#gid=1701566558)
+[History 전체보기()](https://drive.google.com/file/d/1cT7qvnbSuxoW2Fh8Cd9Fbt4_Py0AQmQ_/view)
 
 <br>
   
 ### 6-7. 테스트케이스
 
-[테스트케이스 전체보기](https://docs.google.com/spreadsheets/d/1KmTdoRV8rgC9udDMvjIf_iF-oL1Q7xlhmlt1iGT8YFI/edit#gid=391885132)
+[테스트케이스 전체보기(PDF)](https://drive.google.com/file/d/1C-ErLE7z93qamZTLxxiFJbxhf3suHvFi/view)
 
 <br>
 
