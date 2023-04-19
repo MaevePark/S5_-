@@ -251,19 +251,19 @@
 
 ### 6-2. 요구사항 정의서
 
-[요구사항 정의서 전체보기](https://docs.google.com/spreadsheets/d/1xb1wR4L5h0_hMfXTB2fIgQLs-fSqsQLZH-l-m3iel1U/edit#gid=0)
+[요구사항 정의서 전체보기(PDF)](https://drive.google.com/file/d/1IV6YGZJlFQ7ApLoh6GHNpbhlUQ8I9d3I/view)
 
 <br>
 
 ### 6-3. 화면설계서
 
-[화면설계서 전체보기](https://docs.google.com/presentation/d/1TIw5DeAD8_SS0Zau39jlCUkfEKpOipF6Du-BnKMYTMI/edit#slide=id.g218469d6fbc_0_0)
+[화면설계서 전체보기(PDF)](https://drive.google.com/file/d/1SqsqhzEOmtn4dhlV1-tfymk7GnRFXOZf/view)
 
 <br>
 
 ### 6-4. UseCase Diagram
   
-[UseCase Diagram 전체보기](https://docs.google.com/document/d/1Mp6auVlJ266f7adbvwXY6IVdnGTQSJv3jfRNvJjr35M/edit)
+[UseCase Diagram 전체보기(PDF)](https://github.com/MaevePark/S5_NVoT/files/11271961/UseCase.Diagram.pdf)
 
 <br>
 
