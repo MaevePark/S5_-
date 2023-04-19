@@ -245,7 +245,7 @@
 
 ![프로젝트 일정](https://user-images.githubusercontent.com/111377620/228602879-3a1b9d44-2468-4d31-8699-d746c50173cf.png)
 
-[프로젝트 일정 전체보기](https://docs.google.com/spreadsheets/d/1qgaBi2Stp9QdD2ft-rDFxLhydE2dNDhQjI8ZB4A_YFI/edit#gid=1421974715)
+[프로젝트 일정 전체보기(PDF)](https://drive.google.com/file/d/17_KdhoVMhcBuN8gLlEn_p_ixpWIgWd9_/view)
 
 <br>
 
