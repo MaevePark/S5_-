@@ -275,7 +275,7 @@
   
 ### 6-6. History
 
-[History 전체보기()](https://drive.google.com/file/d/1cT7qvnbSuxoW2Fh8Cd9Fbt4_Py0AQmQ_/view)
+[History 전체보기(PDF)](https://drive.google.com/file/d/1cT7qvnbSuxoW2Fh8Cd9Fbt4_Py0AQmQ_/view)
 
 <br>
   
